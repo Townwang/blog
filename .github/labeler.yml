@@ -1,9 +1,0 @@
-documentation:
-  - docs/**
-  - README.md
-
-bug:
-  - src/**/*.js
-
-feature:
-  - features/**
