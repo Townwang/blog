@@ -65,10 +65,7 @@ const theme = themeName.map((item) => ({
   ],
 }));
 </script>
-
-![](https://codeberg.org/repo-avatars/2593-b6898d48bf5ee43484c48da57de2ef50)
 ### gadgetbridge <Badge type="tip" text="^0.87.1" />
-
 <VPTeamPage>
   <VPTeamPageSection>
     <template #members>
