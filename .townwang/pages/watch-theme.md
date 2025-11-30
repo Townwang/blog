@@ -10,8 +10,11 @@ hero:
       text: Download
       link: https://watch.townwang.com/watch/app/gadgetbridge.nightly_0.87.1.apk
   image:
-    src: https://codeberg.org/repo-avatars/2593-b6898d48bf5ee43484c48da57de2ef50
+    src: /ape.svg
 ---
+
+![](https://codeberg.org/repo-avatars/2593-b6898d48bf5ee43484c48da57de2ef50)
+### gadgetbridge <Badge type="tip" text="^0.87.1" />
 
 <script setup>
 import {
