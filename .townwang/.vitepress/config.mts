@@ -10,10 +10,10 @@ export default defineConfig({
     themeConfig: {
       logo: { src: '/logo.svg', width: 24, height: 24 },
     nav: [
-      { text: 'Home', link: '/' }
+      { text: 'Home', link: '/' },
+	  { text: 'Watch', link: 'https://watch.townwang.com/',  target: '_self',rel: 'sponsored' }
     ],
     socialLinks: [
-      { icon: 'watch', link: 'https://watch.townwang.com' },
 	  { icon: 'github', link: 'https://github.com/Townwang' }
     ],
 	sitemap: {
