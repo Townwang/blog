@@ -65,7 +65,7 @@ const theme = themeName.map((item) => ({
   ],
 }));
 </script>
-### gadgetbridge <Badge type="tip" text="^0.87.1" />
+
 <VPTeamPage>
   <VPTeamPageSection>
     <template #members>
