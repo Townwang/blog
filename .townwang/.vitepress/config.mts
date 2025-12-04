@@ -5,7 +5,7 @@ export default defineConfig({
   head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }] ,
       ['link',{ rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-      ['keywords',{name:'keywords',content:'open-source openApe open ape town townwang engine software'}]
+      ['meta',{name:'keywords',content:'open-source,openApe,open,ape,town,townwang,engine,software'}]
   ],
   lang: 'zh',
   description: "A hub for diverse Android open-source projects. For more open-source content, search the official account 👉 'OpenApe'",
