@@ -3,7 +3,6 @@ layout: home
 
 hero:
   name: Open Project
-  text: open-source openApe open ape town townwang engine software
   tagline:  "a hub for diverse open-source projects. "
   actions:
     - theme: brand
