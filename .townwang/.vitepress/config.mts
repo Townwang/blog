@@ -6,6 +6,7 @@ export default defineConfig({
       ['link', { rel: 'icon', href: '/favicon.ico' }] ,
       ['link',{ rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
   ],
+  lang: 'zh',
   description: "A hub for diverse Android open-source projects. For more open-source content, search the official account 👉 'OpenApe'",
     themeConfig: {
       logo: { src: '/logo.svg', width: 24, height: 24 },
