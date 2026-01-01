@@ -29,10 +29,10 @@ features:
     linkText: See
     link: /open/follow
 
-  - title: Log
-    details: "Breaking android log word limits and automatically formatting json."
+  - title: Ghostland
+    details: "Manage applications to stop or enable using the kernerSU WebUI."
     linkText: See
-    link: /open/log
+    link: /open/ghostland
 ---
 
 
