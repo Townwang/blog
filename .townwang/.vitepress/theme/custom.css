@@ -32,33 +32,28 @@
   padding: 18px;
 }
 
-
 .download-card {
   position: relative;
   padding: 20px;
   margin: 15px 0;
   background-color: var(--vp-c-bg-soft);
   border-radius: 12px;
-  /* 防止标签和按钮超出卡片 */
+  width: 100%;
   overflow: hidden;
 }
 
-/* 左上角三角形标签 - 使用伪元素实现 */
 .download-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  /* 三角形大小：宽高 0，通过边框实现 */
   width: 0;
   height: 0;
   border-width: 40px 40px 0 0;
   border-style: solid;
-  /* 三角形颜色：可自行修改 */
   border-color: #3b82f6 transparent transparent transparent;
 }
 
-/* 下载按钮 - 绝对定位到右下角 */
 .download-btn {
     position: absolute;
     bottom: 0px;
@@ -72,7 +67,6 @@
     border-bottom-right-radius: 12px;
 }
 
-/* 其他样式优化（可选） */
 .card-name {
   font-size: 18px;
   font-weight: 600;
@@ -84,5 +78,7 @@
 }
 .card-container {
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; 
+  padding: 10px 0;
 }
