@@ -3,8 +3,6 @@ layout: home
 ---
 
 <template>
-  <VPTeamPage>
-    <VPTeamPageSection>
       <template #members>
         <!-- 外层容器，增加 v-if 确保数据加载后渲染 -->
         <div class="theme-card-container" v-if="themeList.length">
@@ -19,8 +17,6 @@ layout: home
           </div>
         </div>
       </template>
-    </VPTeamPageSection>
-  </VPTeamPage>
 </template>
 
 <script setup>
