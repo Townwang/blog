@@ -72,21 +72,16 @@
   font-size: 1.25rem;
 }
 
-.card-version {
-  margin: 0 0 1rem;
-  color: #6b7280;
-  font-size: 0.9rem;
-}
-
 /* 下载按钮样式：突出显示 */
 .download-btn {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: #3b82f6;
-  color: white;
+  padding: 0.6rem 1rem;
+  background-color: var(--vp-button-brand-active-bg);
+  border-color: var(--vp-button-brand-active-border);
+  color: var(--vp-button-brand-active-text);
   border-radius: 4px;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.65rem;
   transition: background-color 0.3s ease;
 }
 
