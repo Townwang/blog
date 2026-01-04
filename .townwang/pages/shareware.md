@@ -2,23 +2,6 @@
 layout: home
 ---
 
-<template>
-      <template #members>
-        <!-- 外层容器，增加 v-if 确保数据加载后渲染 -->
-        <div class="theme-card-container" v-if="themeList.length">
-          <div 
-            v-for="(item, index) in themeList" 
-            :key="index"
-            class="theme-card"
-            @click="handleDownload(item.downloadUrl)"
-          >
-            <h3 class="theme-name">{{ item.name }}</h3>
-            <p class="theme-version">v{{ item.version }}</p>
-          </div>
-        </div>
-      </template>
-</template>
-
 <script setup>
 // 方式1：直接定义数据（推荐，避免配置依赖）
 const themeList = [
@@ -42,7 +25,20 @@ const handleDownload = (url) => {
   URL.revokeObjectURL(link.href);
 };
 </script>
-
+    <template #members>
+        <!-- 外层容器，增加 v-if 确保数据加载后渲染 -->
+        <div class="theme-card-container" v-if="themeList.length">
+          <div 
+            v-for="(item, index) in themeList" 
+            :key="index"
+            class="theme-card"
+            @click="handleDownload(item.downloadUrl)"
+          >
+            <h3 class="theme-name">{{ item.name }}</h3>
+            <p class="theme-version">v{{ item.version }}</p>
+          </div>
+        </div>
+      </template>
 <!-- 移除 scoped，或用 :deep() 穿透 -->
 <style>
 .theme-card-container {
