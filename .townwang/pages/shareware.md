@@ -7,6 +7,7 @@ pageClass: "download-page"
 ---
 
 <script setup>
+import {} from "vitepress/theme";
 import { datas } from './shareware.js'
 </script>
 
