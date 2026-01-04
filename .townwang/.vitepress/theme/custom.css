@@ -62,12 +62,12 @@
 
 /* 卡片 hover 效果：增强交互感 */
 .download-card:hover {
-  border-color: var(--vp-home-hero-name-background);
+  filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 /* 卡片内元素样式 */
 .card-name {
-  color: var(--vp-home-hero-name-color);
+  color: var(--vp-home-hero-name-background);
   width: fit-content;
   max-width: 392px;
   letter-spacing: -.4px;
