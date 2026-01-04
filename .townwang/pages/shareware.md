@@ -13,15 +13,14 @@ import { datas } from './shareware.js'
 > [!TIP]
 > 关注公众号 软件人 查看软件详情介绍
 
-<div class="card-container" v-for="data in datas">
-  <div class="download-card" >
+<div class="card-container" >
+  <div class="download-card" v-for="data in datas">
     <h1 class="heading">
-    <span class="card-name">{{data.name}} <Badge type="tip" :text="data.version" /></span>
+      <span class="card-name">{{data.name}} <Badge type="tip" :text="data.version" /></span>
     </h1>
     <p class="card-description">{{data.description}}</p>
     <a :href="data.downloadUrl" class="download-btn" target="_blank">
-      下载软件
+      download
     </a>
   </div>
 </div>
-
