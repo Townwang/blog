@@ -13,7 +13,8 @@ export default defineConfig({
       logo: { src: '/logo.svg', width: 24, height: 24 },
     nav: [
       { text: 'Home', link: '/' },
-	  { text: 'Watch', link: '/pages/watch-theme',  target: '_self',rel: 'sponsored' }
+	  { text: 'Watch', link: '/pages/watch-theme' },
+      { text: 'Shareware', link: '/pages/shareware' },
     ],
     socialLinks: [
 	  { icon: 'github', link: 'https://github.com/Townwang' }
