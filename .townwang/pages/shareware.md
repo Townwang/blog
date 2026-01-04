@@ -14,7 +14,7 @@ import { datas } from './shareware.js'
 <div class="card-container" v-for="data in datas">
   <div class="download-card" >
     <h3 class="card-name">{{data.name}} <Badge type="tip" text="v{{data.version}}" /></h3>
-    <p class="card-version">{{data.dec}}</p>
+    <p class="card-version">{{data.description}}</p>
     <a href="{{data.downloadUrl}}" class="download-btn" target="_blank">
       下载软件
     </a>
