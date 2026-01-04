@@ -31,3 +31,81 @@
   filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
   padding: 18px;
 }
+
+
+
+/* 页面全局样式：控制卡片容器布局 */
+.download-page {
+  padding: 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 卡片容器：flex 布局，支持响应式 */
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* 单个卡片样式：边框、圆角、内边距 */
+.download-card {
+  width: 280px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+/* 卡片 hover 效果：增强交互感 */
+.download-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片内元素样式 */
+.card-name {
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+  font-size: 1.25rem;
+}
+
+.card-version {
+  margin: 0 0 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* 下载按钮样式：突出显示 */
+.download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #2563eb;
+}
+
+/* 响应式：小屏幕下卡片纵向排列 */
+@media (max-width: 768px) {
+  .download-page {
+    padding: 1rem 2rem;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
