@@ -2,6 +2,25 @@
 layout: home
 ---
 
+<script setup>
+// 主题列表数据：替换为你的实际数据
+const themeList = [
+  { name: "主题A", version: "1.0.0", downloadUrl: "/path/to/themeA.zip" },
+  { name: "主题B", version: "2.1.3", downloadUrl: "/path/to/themeB.zip" },
+  { name: "主题C", version: "0.8.5", downloadUrl: "/path/to/themeC.zip" }
+];
+
+// 下载处理函数
+const handleDownload = (url) => {
+  // 创建a标签触发下载
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = url.split('/').pop(); // 自动提取文件名
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+</script>
 <template>
   <VPTeamPage>
     <VPTeamPageSection>
@@ -25,26 +44,6 @@ layout: home
     </VPTeamPageSection>
   </VPTeamPage>
 </template>
-
-<script setup>
-// 主题列表数据：替换为你的实际数据
-const themeList = [
-  { name: "主题A", version: "1.0.0", downloadUrl: "/path/to/themeA.zip" },
-  { name: "主题B", version: "2.1.3", downloadUrl: "/path/to/themeB.zip" },
-  { name: "主题C", version: "0.8.5", downloadUrl: "/path/to/themeC.zip" }
-];
-
-// 下载处理函数
-const handleDownload = (url) => {
-  // 创建a标签触发下载
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = url.split('/').pop(); // 自动提取文件名
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
-</script>
 
 <style scoped>
 .theme-card-container {
