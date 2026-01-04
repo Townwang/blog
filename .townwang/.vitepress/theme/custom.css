@@ -33,79 +33,56 @@
 }
 
 
-
-/* 页面全局样式：控制卡片容器布局 */
-.download-page {
-  padding: 2rem 4rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* 卡片容器：flex 布局，支持响应式 */
-.card-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-/* 单个卡片样式：边框、圆角、内边距 */
 .download-card {
-  width: 280px;
-  padding: 1.5rem;
+  position: relative;
+  padding: 20px;
+  margin: 15px 0;
   background-color: var(--vp-c-bg-soft);
   border-radius: 12px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
+  /* 防止标签和按钮超出卡片 */
+  overflow: hidden;
 }
 
-/* 卡片 hover 效果：增强交互感 */
-.download-card:hover {
-  filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
+/* 左上角三角形标签 - 使用伪元素实现 */
+.download-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 三角形大小：宽高 0，通过边框实现 */
+  width: 0;
+  height: 0;
+  border-width: 40px 40px 0 0;
+  border-style: solid;
+  /* 三角形颜色：可自行修改 */
+  border-color: #3b82f6 transparent transparent transparent;
 }
 
-/* 卡片内元素样式 */
-.card-name {
-  color: var(--vp-home-hero-name-background);
-  width: fit-content;
-  max-width: 392px;
-  letter-spacing: -.4px;
-  line-height: 40px;
-  font-size: 32px;
-  font-weight: 700;
-  white-space: pre-wrap
-}
-
-/* 下载按钮样式：突出显示 */
+/* 下载按钮 - 绝对定位到右下角 */
 .download-btn {
-  display: inline-block;
-  margin-top:1rem;
-  padding: 0.4rem 0.8rem;
-  background-color: var(--vp-button-brand-active-bg);
-  border-color: var(--vp-button-brand-active-border);
-  color: var(--vp-button-brand-active-text);
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 6px 22px;
+    background-color: var(--vp-button-brand-active-bg);
+    border-color: var(--vp-button-brand-active-border);
+    color: var(--vp-button-brand-active-text);
+    /* text-decoration:none; */
+    border-top-left-radius: 90%;
+    border-bottom-right-radius: 12px;
 }
 
-.download-btn:hover {
-  background-color: #2563eb;
+/* 其他样式优化（可选） */
+.card-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--vp-home-hero-name-background);
 }
-
-/* 响应式：小屏幕下卡片纵向排列 */
-@media (max-width: 768px) {
-  .download-page {
-    padding: 1rem 2rem;
-  }
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .download-card {
-    width: 100%;
-    max-width: 350px;
-  }
+.card-description {
+  margin: 10px 0;
+  color: #666;
+}
+.card-container {
+  display: grid;
+  gap: 10px;
 }
