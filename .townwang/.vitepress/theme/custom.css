@@ -75,7 +75,7 @@
 /* 下载按钮样式：突出显示 */
 .download-btn {
   display: inline-block;
-  margin-top:2rem;
+  margin-top:1rem;
   padding: 0.4rem 0.8rem;
   background-color: var(--vp-button-brand-active-bg);
   border-color: var(--vp-button-brand-active-border);
