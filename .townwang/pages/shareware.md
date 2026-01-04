@@ -38,6 +38,7 @@ const handleDownload = (url) => {
             <p class="theme-version">v{{ item.version }}</p>
           </div>
         </div>
+         <Content />
       </template>
 <!-- 移除 scoped，或用 :deep() 穿透 -->
 <style>
