@@ -10,6 +10,7 @@ pageClass: "download-page"
 import { datas } from './shareware.js'
 </script>
 
+> [!TIP]
 > 关注公众号 软件人 查看软件详情介绍
 
 <div class="card-container" v-for="data in datas">
