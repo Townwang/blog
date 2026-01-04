@@ -13,8 +13,8 @@ import { datas } from './shareware.js'
 > [!TIP]
 > 关注公众号 软件人 查看软件详情介绍
 
-<div class="card-container" v-for="data in datas">
-  <div class="download-card" >
+<div class="card-container" >
+  <div class="download-card" v-for="data in datas">
     <h1 class="heading">
       <span class="card-name">{{data.name}} <Badge type="tip" :text="data.version" /></span>
     </h1>
