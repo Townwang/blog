@@ -10,8 +10,7 @@ pageClass: "download-page"
 <div class="card-container">
   <!-- 卡片1：示例 - Vite 工具 -->
   <div class="download-card">
-    ### 你好. <Badge type="tip" text="v1.0.0" />
-    <h3 class="card-name">Vite 构建工具</h3>
+    <h3 class="card-name">Vite 构建工具 <Badge type="tip" text="v1.0.0" /></h3>
     <p class="card-version">当前版本：v5.2.0</p>
     <a href="https://vitejs.dev/guide/download.html" class="download-btn" target="_blank">
       下载安装
