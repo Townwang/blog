@@ -62,14 +62,20 @@
 
 /* 卡片 hover 效果：增强交互感 */
 .download-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: var(--vp-home-hero-name-background);
 }
 
 /* 卡片内元素样式 */
 .card-name {
-  margin: 0 0 0.5rem;
-  color: #1f2937;
-  font-size: 1.25rem;
+  background: var(--vp-home-hero-name-background);
+  color: var(--vp-home-hero-name-color);
+  width: fit-content;
+  max-width: 392px;
+  letter-spacing: -.4px;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  white-space: pre-wrap
 }
 
 /* 下载按钮样式：突出显示 */
