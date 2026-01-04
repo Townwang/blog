@@ -10,7 +10,9 @@ pageClass: "download-page"
 import { datas } from './shareware.js'
 </script>
 
-## 关注公众号 软件人 查看软件介绍
+> [!TIP]
+> 关注公众号 软件人 查看软件详情介绍
+
 <div class="card-container" v-for="data in datas">
   <div class="download-card" >
     <h3 class="card-name">{{data.name}} <Badge type="tip" :text="data.version" /></h3>
