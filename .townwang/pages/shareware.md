@@ -6,8 +6,8 @@ description: 包含常用工具的版本及下载入口
 pageClass: "download-page"
 ---
 
-<script setup>
-import Features from '../.vitepress/theme/components/Downloads.vue'
+<script setup lang="ts">
+import Features from '../.vitepress/theme/layouts/DownloadLayout.vue'
 import { datas } from './shareware.js'
 </script>
 
