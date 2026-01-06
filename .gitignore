@@ -1,3 +1,4 @@
 node_modules
+docs
 .townwang/.vitepress/cache
 .townwang/.vitepress/dist
