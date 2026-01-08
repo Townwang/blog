@@ -8,7 +8,8 @@ export const datas = [
   },
   {
     title: "Stratum",
-    desc: "Stratum 是一款开源的双因素认证应用程序。",            link:"https://apt.izzysoft.de/fdroid/repo/com.stratumauth.app_12.apk",
+    desc: "Stratum 是一款开源的双因素认证应用程序。",
+link:"https://apt.izzysoft.de/fdroid/repo/com.stratumauth.app_12.apk",
     btnText: "立即下载",
     version: "v1.4.0"
   }
