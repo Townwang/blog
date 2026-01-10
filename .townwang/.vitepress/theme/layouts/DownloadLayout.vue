@@ -90,11 +90,12 @@ const props = defineProps({
 
 .feature-btn {
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 0rem;
+  right: 0rem;
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  border-radius: 4px;
+  border-top-left-radius:50px;
+  border-top-right-radius:8px;
   background: var(--vp-c-brand);
   color: white;
   text-decoration: none;
@@ -119,8 +120,8 @@ const props = defineProps({
     font-size: 0.7rem !important;
   }
   .feature-btn {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0rem;
+    right: 0rem;
   }
 }
 </style>
