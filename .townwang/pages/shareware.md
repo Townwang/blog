@@ -15,6 +15,11 @@ features:
     desc: Stratum 是一款开源的双因素认证应用程序。
     btnText: 立即下载
     version: v1.4.0
+  - title: BiliPai
+    link: https://github.com/jay3-yy/BiliPai/releases/download/3.5.0/BiliPai.apk
+    desc: 原生、纯净、可扩展 —— 重新定义你的 B 站体验
+    btnText: 立即下载
+    version: v3.5.0
 ---
 
 <script setup lang="ts">
