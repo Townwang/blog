@@ -97,8 +97,9 @@ const props = defineProps({
   border-top-left-radius:50px;
   border-bottom-right-radius:8px;
   border-bottom-left-radius:8px;
-  background: var(--vp-c-brand);
-  color: white;
+  border-color: var(--vp-c-brand);
+  border-style:solid;
+  color: var(--vp-c-brand);
   text-decoration: none;
   font-size: 0.9rem;
   transition: none;
