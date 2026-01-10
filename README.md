@@ -1,5 +1,7 @@
 
-<H1 align="center"> <a href="https://townwang.com">open ape</a></H1>
+<H1 align="center"> 
+  <a href="https://townwang.com"><img src="https://img.shields.io/badge/openApe-228be6" /></a>
+</H1>
 
 ## build status
 
