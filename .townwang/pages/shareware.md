@@ -20,6 +20,11 @@ features:
     desc: 原生、纯净、可扩展 —— 重新定义你的 B 站体验
     btnText: 立即下载
     version: v3.5.0
+  - title: 拟声
+    link: https://download.music.mimicry.cool/
+    desc: 拟声音乐app是一款免费听歌的软件，里面有真丰富的曲库资源，市面上一些比较火热的音乐在软件内都可以通过搜索找到，同时针对不同年龄段的群体还设置了专门的歌单，以此来满足不同用户的需求。
+    btnText: 立即下载
+    version:v0.84.0
 ---
 
 <script setup lang="ts">
