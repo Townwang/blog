@@ -30,6 +30,11 @@ features:
     desc: Flow让你一键轻松实现自动重复点击和滑动
     btnText: 立即下载
     version: v1.3.4
+  - title: SAI安装器
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.2/SAI%E5%AE%89%E8%A3%85%E5%99%A8v2.1.8.apk
+    desc: 在您设备上安装APK-APKS-XAPK-APKM和分割APK
+    btnText: 立即下载
+    version: v2.1.8
 ---
 
 <script setup lang="ts">
