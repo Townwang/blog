@@ -99,6 +99,7 @@ const props = defineProps({
   border-bottom-left-radius:8px;
   border-color: var(--vp-c-brand);
   border-style:solid;
+  border-width: 1px;
   color: var(--vp-c-brand);
   text-decoration: none;
   font-size: 0.9rem;

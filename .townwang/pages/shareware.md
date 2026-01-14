@@ -41,9 +41,109 @@ features:
 import Features from '../.vitepress/theme/layouts/DownloadLayout.vue'
 import { useData } from 'vitepress'
 const { frontmatter } = useData()
+import { ref, computed } from 'vue'
+
+const inputPassword = ref('')      
+const isVerified = ref(false) 
+const errorTip = ref('')
+const isLoading = ref(false) 
+
+const isButtonDisabled = computed(() => {
+  return isLoading.value || isVerified.value || !inputPassword.value.trim()
+})
+
+const decodeChineseBase64 = (base64: string): string => {
+  try {
+    const binaryStr = atob(base64)
+    const utf8Bytes = new Uint8Array(binaryStr.length)
+    for (let i = 0; i < binaryStr.length; i++) {
+      utf8Bytes[i] = binaryStr.charCodeAt(i)
+    }
+    return new TextDecoder('utf-8').decode(utf8Bytes)
+  } catch (err) {
+    throw new Error('解码失败')
+  }
+}
+
+const fetchBase64ByPassword = async (password: string): Promise<string> => {
+  try {
+    const response = await fetch('http://localhost:5173/shareware', {
+      method: 'GET',
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'If-Modified-Since': '0'
+      }
+    })
+
+    if (!response.ok) {
+      throw new Error(`API请求失败：${response.status} ${response.statusText}`)
+    }
+
+    const rawBase64 = await response.text()
+    return rawBase64
+  } catch (err) {
+    throw new Error(`获取失败：${(err as Error).message}`)
+  }
+}
+
+const validateBase64 = (base64: string, inputPwd: string): boolean => {
+  const decodedText = decodeChineseBase64(base64)
+  if (decodedText !== inputPwd) {
+    throw new Error('密码错误，请重新输入')
+  }
+
+  return true
+}
+
+const verifyPassword = async () => {
+  isLoading.value = true
+  errorTip.value = ''
+  
+  try {
+    const inputPwd = inputPassword.value.trim()
+    
+    const base64 = await fetchBase64ByPassword(inputPwd)
+
+    validateBase64(base64, inputPwd)
+
+    isVerified.value = true
+  } catch (err) {
+    errorTip.value = (err as Error).message
+    isVerified.value = false
+  } finally {
+    isLoading.value = false
+  }
+}
+
+const logout = () => {
+  inputPassword.value = ''
+  isVerified.value = false
+  errorTip.value = ''
+}
 </script>
 
 > [!TIP]
-> 关注公众号 软件人 查看软件详情介绍
+> 关注公众号 软件人 查看软件详细介绍并获取密码
 
-<Features :features="frontmatter.features" />
+<div v-if="!isVerified" class="password-verify-container">
+  <h3 class="verify-title">请输入资源访问密码</h3>
+  <input
+    type="password"
+    v-model="inputPassword"
+    placeholder="请输入密码"
+    class="verify-input"
+    @keyup.enter="!isButtonDisabled && verifyPassword()"
+  />
+  <button
+    @click="verifyPassword"
+    :disabled="isButtonDisabled"
+    class="verify-btn"
+  >
+    {{ isLoading ? '验证中...' : '验证' }}
+  </button>
+  <p class="verify-error">{{ errorTip }}</p>
+</div>
+<div v-else class="resource-content">
+  <Features :features="frontmatter.features" />
+</div>
