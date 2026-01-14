@@ -67,7 +67,7 @@ const decodeChineseBase64 = (base64: string): string => {
 
 const fetchBase64ByPassword = async (password: string): Promise<string> => {
   try {
-    const response = await fetch('http://localhost:5173/shareware', {
+    const response = await fetch('/shareware', {
       method: 'GET',
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
