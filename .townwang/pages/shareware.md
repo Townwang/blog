@@ -25,6 +25,11 @@ features:
     desc: 拟声音乐app是一款免费听歌的软件，里面有真丰富的曲库资源，市面上一些比较火热的音乐在软件内都可以通过搜索找到，同时针对不同年龄段的群体还设置了专门的歌单，以此来满足不同用户的需求。
     btnText: 立即下载
     version: v0.84.0
+  - title: Flow Auto Clicker
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.1/Auto%20Clicker_1.3.4.apk
+    desc: Flow让你一键轻松实现自动重复点击和滑动
+    btnText: 立即下载
+    version: v1.3.4
 ---
 
 <script setup lang="ts">
