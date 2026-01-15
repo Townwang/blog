@@ -198,6 +198,6 @@ onMounted(() => {
   <p class="verify-error">{{ errorTip }}</p>
 </div>
 <div v-else class="resource-content">
-  <button @click="logout" class="logout-btn" style="margin-bottom:16px;padding:4px 8px;">退出登录</button>
+  <button @click="logout" class="logout-btn">退出登录</button>
   <Features :features="frontmatter.features" />
 </div>
