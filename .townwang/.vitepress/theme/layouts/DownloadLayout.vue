@@ -1,15 +1,12 @@
 <!-- blog/.townwang/.vitepress/theme/components/Downloads.vue -->
 <template>
   <div class="features">
-    <!-- 增加空数据兜底提示 -->
-    <div v-if="features.length === 0" class="empty-tip">
-      暂无下载资源
-    </div>
+    <!-- 新增日期判断：当前日期 >= item.showAfter 才显示 -->
     <div 
       v-for="(item, index) in features" 
-      :key="index"  <!-- 建议使用 item.id 作为 key 更稳定 -->
+      :key="index" 
       class="feature-card"
-      v-if="isEnable(item.date)"
+      v-if="!item.showAfter || new Date() >= new Date(item.showAfter)"
     >
       <VPBadge 
         v-if="item.version" 
@@ -35,7 +32,6 @@
 
 <script setup>
 import { VPBadge } from 'vitepress/theme'
-import { computed } from 'vue'
 
 const props = defineProps({
   features: {
@@ -44,27 +40,6 @@ const props = defineProps({
     default: () => []
   }
 });
-
-// 修复 isEnable 函数：优化日期对比逻辑，避免 NaN 异常
-const isEnable = (date) => {
-  if (!date) return true // 无 date 字段 直接显示
-
-  let targetDate
-  try {
-    targetDate = typeof date === 'string' ? new Date(date) : date
-    // 验证日期有效性
-    if (isNaN(targetDate.getTime())) return true
-  } catch (e) {
-    return true
-  }
-
-  // 统一日期格式为 年-月-日 00:00:00 进行对比
-  const now = new Date()
-  const currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-  const compareTarget = new Date(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate())
-
-  return currentDate >= compareTarget
-}
 </script>
 
 <style scoped>
@@ -75,17 +50,6 @@ const isEnable = (date) => {
   padding: 2rem 1.5rem; 
   max-width: 1200px;
   margin: 0 auto;
-  /* 确保空数据时容器高度正常 */
-  min-height: 200px;
-}
-
-/* 空数据提示样式 */
-.empty-tip {
-  grid-column: 1 / -1;
-  text-align: center;
-  color: var(--vp-c-text-2);
-  padding: 2rem;
-  font-size: 0.95rem;
 }
 
 .feature-card {
@@ -96,8 +60,6 @@ const isEnable = (date) => {
   transition: transform 0.2s ease;
   position: relative;
   padding-bottom: 4rem;
-  /* 增加边框，确保卡片可见 */
-  border: 1px solid var(--vp-c-divider-light);
 }
 
 .feature-card:hover {
@@ -130,8 +92,8 @@ const isEnable = (date) => {
 
 .feature-btn {
   position: absolute;
-  bottom: 1rem; /* 修复按钮位置：原 bottom:0 可能被遮挡 */
-  right: 1.5rem;
+  bottom: 0rem;
+  right: 0rem;
   display: inline-block;
   padding: 0.5rem 1.25rem;
   border-top-left-radius:50px;
@@ -143,13 +105,7 @@ const isEnable = (date) => {
   color: var(--vp-c-brand);
   text-decoration: none;
   font-size: 0.9rem;
-  transition: all 0.2s ease;
-}
-
-/* 增加按钮 hover 效果 */
-.feature-btn:hover {
-  background-color: var(--vp-c-brand);
-  color: var(--vp-c-white);
+  transition: none;
 }
 
 @media (max-width: 768px) {
@@ -169,8 +125,8 @@ const isEnable = (date) => {
     font-size: 0.7rem !important;
   }
   .feature-btn {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0rem;
+    right: 0rem;
   }
 }
 </style>
