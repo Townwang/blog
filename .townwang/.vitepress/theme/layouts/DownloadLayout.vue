@@ -42,15 +42,30 @@ const props = defineProps({
 });
 
 const isAfterDate = (targetDateStr) => {
-   if (!targetDateStr) return true;
-   const dateReg = /^\d{4}-\d{2}-\d{2}$/;
-   if (!dateReg.test(targetDateStr)) return true;
-   const [year, month, day] = targetDateStr.split('-').map(Number);
-   const targetUTC = Date.UTC(year, month - 1, day);
-   const today = new Date();
-   const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+   // 调试：打印原始入参，看是否有隐形字符
+   console.log('[入参原始值]', targetDateStr, '类型:', typeof targetDateStr)
+   // 1. 无值直接显示
+   if (!targetDateStr) {
+     console.log('[判定] 无日期字段 → 显示')
+     return true
+   }
+   // 关键修复：去除前后隐形空格（frontmatter 可能误加空格）
+   const trimedDate = targetDateStr.trim()
+   // 2. 严格校验 YYYY-MM-DD 格式
+   const dateReg = /^\d{4}-\d{2}-\d{2}$/
+   if (!dateReg.test(trimedDate)) {
+     console.warn('[判定] 格式错误 → 显示，正确格式：2026-01-16，当前值：', trimedDate)
+     return true
+   }
+   // 3. 分割日期并对比 UTC 时间
+   const [year, month, day] = trimedDate.split('-').map(Number)
+   const targetUTC = Date.UTC(year, month - 1, day)
+   const today = new Date()
+   const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate())
    
-   return todayUTC >= targetUTC;
+   const result = todayUTC >= targetUTC
+   console.log(`[判定] ${trimedDate} vs ${today.toLocaleDateString()} → ${result ? '显示' : '隐藏'}`)
+   return result
  }
 </script>
 
