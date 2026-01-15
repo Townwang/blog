@@ -6,8 +6,10 @@
   v-for="(item, index) in features" 
   :key="index" 
   class="feature-card"
-  v-if="isAfterDate(item.showAfter)"
+  <!-- 关键改动：字段存在才调用函数，不存在直接显示 -->
+  v-if="item && (item.showAfter ? isAfterDate(item.showAfter) : true)"
 >
+
       <VPBadge 
         v-if="item.version" 
         type="tip" 
@@ -43,14 +45,16 @@ const props = defineProps({
 
 
 const isAfterDate = (targetDateStr) => {
-  // 兼容 YYYY-MM-DD 格式，强制转为本地时间的 08:00:00
-  const [year, month, day] = targetDateStr.split('-').map(Number)
-  const targetDate = new Date(year, month - 1, day)
-  const today = new Date()
-  today.setHours(8, 0, 0, 0) // 重置当天时间为 00:00:00
-  return today >= targetDate
-}
-
+   // 容错1：入参为空，直接返回true（显示组件）
+   if (!targetDateStr) return true
+   // 容错2：强制解析 YYYY-MM-DD 格式，避免格式错误
+   const [year, month, day] = targetDateStr.split('-').map(Number)
+   if (!year || !month || !day) return true
+   const targetDate = new Date(year, month - 1, day)
+   const today = new Date()
+   today.setHours(0, 0, 0, 0) // 重置当天时间为 00:00:00，避免时分秒干扰
+   return today >= targetDate
+ }
 </script>
 
 <style scoped>
