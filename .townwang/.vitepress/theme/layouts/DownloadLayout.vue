@@ -1,11 +1,10 @@
 <!-- blog/.townwang/.vitepress/theme/components/Downloads.vue -->
 <template>
   <div class="features">
-
-<div v-for="(item, index) in features">
       <div 
+        v-for="(item, index) in features"
         :key="index"
-        v-if="item && isAfterDate(item.showAfter)"
+        :v-if="item && isAfterDate(item.showAfter)"
         class="feature-card"
        >
       <VPBadge 
@@ -27,7 +26,6 @@
         {{ item.btnText || 'Download' }}
       </a>
     </div>
-  </div>
 </div>
 </template>
 
