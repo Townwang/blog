@@ -4,7 +4,9 @@
     <!-- 新增日期判断：当前日期 >= item.showAfter 才显示 -->
 <div 
   v-for="(item, index) in features" 
-  :key="index" 
+  :key="index"
+>
+<div
   class="feature-card"
   v-if="(item.showAfter ? isAfterDate(item.showAfter) : true)"
 >
@@ -29,6 +31,7 @@
       </a>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
