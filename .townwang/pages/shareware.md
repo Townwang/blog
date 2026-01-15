@@ -57,8 +57,8 @@ features:
 
 <script setup lang="ts">
 import Features from '../.vitepress/theme/layouts/DownloadLayout.vue'
-import { useData, onMounted } from 'vitepress'
-import { ref, computed } from 'vue'
+import { useData } from 'vitepress'
+import { ref, computed, onMounted } from 'vue' // 关键修正：从vue导入onMounted
 
 const { frontmatter } = useData()
 const inputPassword = ref('')      
