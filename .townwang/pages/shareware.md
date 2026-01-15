@@ -10,44 +10,49 @@ features:
     desc: 全球网测是中国信息通信研究院自主研发的专业网络测试工具，具备宽带测速、上网体验和网络诊断三大核心功能。
     btnText: 立即下载
     version: v4.4.4
-    date: 2026-01-14
+    showAfter: 2026-01-14
   - title: Stratum
     link: https://apt.izzysoft.de/fdroid/repo/com.stratumauth.app_12.apk
     desc: Stratum 是一款开源的双因素认证应用程序。
     btnText: 立即下载
     version: v1.4.0
+    showAfter: 2026-01-14
   - title: BiliPai
     link: https://github.com/jay3-yy/BiliPai/releases/download/3.5.0/BiliPai.apk
     desc: 原生、纯净、可扩展 —— 重新定义你的 B 站体验
     btnText: 立即下载
     version: v3.5.0
+    showAfter: 2026-01-14
   - title: 拟声
     link: https://download.music.mimicry.cool/
     desc: 拟声音乐app是一款免费听歌的软件，里面有真丰富的曲库资源，市面上一些比较火热的音乐在软件内都可以通过搜索找到，同时针对不同年龄段的群体还设置了专门的歌单，以此来满足不同用户的需求。
     btnText: 立即下载
     version: v0.84.0
+    showAfter: 2026-01-14
   - title: Flow Auto Clicker
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.1/Auto%20Clicker_1.3.4.apk
     desc: Flow让你一键轻松实现自动重复点击和滑动
     btnText: 立即下载
     version: v1.3.4
+    showAfter: 2026-01-14
   - title: SAI安装器
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.2/SAI%E5%AE%89%E8%A3%85%E5%99%A8v2.1.8.apk
     desc: 在您设备上安装APK-APKS-XAPK-APKM和分割APK
     btnText: 立即下载
     version: v2.1.8
+    showAfter: 2026-01-14
   - title: 中药百科大全
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.3/%E4%B8%AD%E8%8D%AF%E7%99%BE%E7%A7%91%E5%A4%A7%E5%85%A8_1.5.apk
     desc: 【中药百科大全】v1.5解锁永久会员版/药材方剂中药识别一站式查
     btnText: 立即下载
     version: v1.5.0
-    date: 2026-01-16
+    showAfter: 2026-01-16
   - title: 金调KTV
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.4/%E9%87%91%E8%B0%83KTV_20250801.8.1.apk
     desc: 【金调KTV】v20250801.8.1更新修改永久激活免费版
     btnText: 立即下载
     version: v1.8.1
-    date: 2026-01-17
+    showAfter: 2026-01-17
 ---
 
 <script setup lang="ts">
