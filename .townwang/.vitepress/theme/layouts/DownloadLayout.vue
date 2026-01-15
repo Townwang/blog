@@ -6,7 +6,6 @@
   v-for="(item, index) in features" 
   :key="index" 
   class="feature-card"
-  <!-- 关键改动：字段存在才调用函数，不存在直接显示 -->
   v-if="item && (item.showAfter ? isAfterDate(item.showAfter) : true)"
 >
 
