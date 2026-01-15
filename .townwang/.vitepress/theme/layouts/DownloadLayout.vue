@@ -4,12 +4,10 @@
      v-for="(item, index) in features"
      :key="index"
        >
-  <div>
       <div 
         class="feature-card"
         v-if="isAfterDate(item.showAfter)"
        >
-      <div>
       <VPBadge 
         v-if="item.version" 
         type="tip" 
@@ -28,8 +26,6 @@
       >
         {{ item.btnText || 'Download' }}
       </a>
-    </div>
-   </div>
 </div>
 </template>
 
