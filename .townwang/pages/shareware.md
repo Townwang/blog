@@ -65,6 +65,13 @@ features:
     btnText: 立即下载
     version: v1.8.6
     showAfter: 2026-01-20
+  - title: 30天内练出六块腹肌
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.6/30%E5%A4%A9%E5%86%85%E7%BB%83%E5%87%BA%E5%85%AD%E5%9D%97%E8%85%B9%E8%82%8Cv1.4.4(98).apk
+    desc: 超级有效实用腹部锻炼
+    btnText: 立即下载
+    version: v1.4.4
+    showAfter: 2026-01-21
+
 ---
 
 <script setup lang="ts">
