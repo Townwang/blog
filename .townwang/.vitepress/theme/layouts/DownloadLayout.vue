@@ -1,5 +1,5 @@
 <template class="features">
-     <div v-for="(item, index) in features" :key="index">
+     <div class="features" v-for="(item, index) in features" :key="index">
         <div v-if="isAfterDate(item.showAfter)" class="feature-card"
         >
          <VPBadge 
