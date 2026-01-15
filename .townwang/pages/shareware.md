@@ -35,6 +35,18 @@ features:
     desc: 在您设备上安装APK-APKS-XAPK-APKM和分割APK
     btnText: 立即下载
     version: v2.1.8
+  - title: 中药百科大全
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.3/%E4%B8%AD%E8%8D%AF%E7%99%BE%E7%A7%91%E5%A4%A7%E5%85%A8_1.5.apk
+    desc: 【中药百科大全】v1.5解锁永久会员版/药材方剂中药识别一站式查
+    btnText: 立即下载
+    version: v1.5.0
+    date: 2026-01-16
+  - title: 金调KTV
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.4/%E9%87%91%E8%B0%83KTV_20250801.8.1.apk
+    desc: 【金调KTV】v20250801.8.1更新修改永久激活免费版
+    btnText: 立即下载
+    version: v1.8.1
+    date: 2026-01-17
 ---
 
 <script setup lang="ts">
