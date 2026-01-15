@@ -1,11 +1,6 @@
-<!-- blog/.townwang/.vitepress/theme/components/Downloads.vue -->
 <template>
-     <div class="features"
-     v-for="(item, index) in features"
-     :key="index">
-        <div
-        v-if="isAfterDate(item.showAfter)"
-        class="feature-card"
+     <div class="features" v-for="(item, index) in features" :key="index">
+        <div v-if="isAfterDate(item.showAfter)" class="feature-card"
         >
          <VPBadge 
            v-if="item.version" 
