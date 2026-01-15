@@ -2,11 +2,12 @@
 <template>
   <div class="features"  
  >
-<div
- v-for="(item, index) in features" 
- :key="index"
-  class="feature-card"
->
+
+<template v-for="(item, index) in features" :key="index">
+      <div 
+        class="feature-card"
+        v-if="item && isAfterDate(item.showAfter)"
+      >
       <VPBadge 
         v-if="item.version" 
         type="tip" 
@@ -28,6 +29,7 @@
     </div>
   </div>
 </template>
+</template>
 
 <script setup>
 import { VPBadge } from 'vitepress/theme'
@@ -40,17 +42,24 @@ const props = defineProps({
   }
 });
 
-
 const isAfterDate = (targetDateStr) => {
-   // 容错1：入参为空，直接返回true（显示组件）
+   // 1. 无日期字段 → 直接显示
    if (!targetDateStr) return true
-   // 容错2：强制解析 YYYY-MM-DD 格式，避免格式错误
+   // 2. 强制校验 YYYY-MM-DD 格式（严格匹配 frontmatter 配置）
+   const dateReg = /^\d{4}-\d{2}-\d{2}$/
+   if (!dateReg.test(targetDateStr)) {
+     console.warn(`[日期格式错误] 请使用 YYYY-MM-DD 格式，当前值：${targetDateStr}`)
+     return true
+   }
+   // 3. 分割年月日并转换为数字
    const [year, month, day] = targetDateStr.split('-').map(Number)
-   if (!year || !month || !day) return true
-   const targetDate = new Date(year, month - 1, day)
+   
+   // 4. 基于 UTC 时间对比，彻底消除时区差异
+   const targetUTC = Date.UTC(year, month - 1, day) // month 从 0 开始
    const today = new Date()
-   today.setHours(0, 0, 0, 0) // 重置当天时间为 00:00:00，避免时分秒干扰
-   return today >= targetDate
+   const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate())
+   // 5. 今天 UTC 时间 >= 目标 UTC 时间 → 显示
+   return todayUTC >= targetUTC
  }
 </script>
 
