@@ -6,6 +6,7 @@
   v-for="(item, index) in features" 
   :key="index" 
   class="feature-card"
+  v-if="item && (!item.showAfter || isAfterDate(item.showAfter))"
 >
       <VPBadge 
         v-if="item.version" 
@@ -40,22 +41,16 @@ const props = defineProps({
   }
 });
 
+
 const isAfterDate = (targetDateStr) => {
-   const targetDate = new Date(targetDateStr)
-   const today = new Date()
-   // 重置为 UTC 时间的 00:00:00
-   const targetUTC = new Date(Date.UTC(
-     targetDate.getFullYear(), 
-     targetDate.getMonth(), 
-     targetDate.getDate()
-   ))
-   const todayUTC = new Date(Date.UTC(
-     today.getFullYear(), 
-     today.getMonth(), 
-     today.getDate()
-   ))
-   return todayUTC >= targetUTC
- }
+  // 兼容 YYYY-MM-DD 格式，强制转为本地时间的 00:00:00
+  const [year, month, day] = targetDateStr.split('-').map(Number)
+  const targetDate = new Date(year, month - 1, day)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0) // 重置当天时间为 00:00:00
+  return today >= targetDate
+}
+
 </script>
 
 <style scoped>
