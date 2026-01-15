@@ -27,6 +27,7 @@
         {{ item.btnText || 'Download' }}
       </a>
 </div>
+</div>
 </template>
 
 <script setup>
