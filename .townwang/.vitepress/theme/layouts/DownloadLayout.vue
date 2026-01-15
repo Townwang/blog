@@ -6,7 +6,6 @@
   v-for="(item, index) in features" 
   :key="index" 
   class="feature-card"
-  v-if="item && (!item.showAfter || isAfterDate(item.showAfter))"
 >
       <VPBadge 
         v-if="item.version" 
