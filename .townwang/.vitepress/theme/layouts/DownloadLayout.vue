@@ -41,16 +41,11 @@ const props = defineProps({
   }
 });
 const isAfterDate = (targetDateStr) => {
-   // 1. 无日期字段 → 直接显示
    if (!targetDateStr) return true
-   // 2. 解析 ISO 格式日期字符串（自动识别 UTC 时区）
    const targetDate = new Date(targetDateStr)
-   // 解析失败时默认显示
    if (isNaN(targetDate.getTime())) return true
-   // 3. 构建今天的 UTC 00:00:00 时间
    const today = new Date()
    const todayUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()))
-   // 4. UTC 时间对比：今天 >= 目标日期 → 显示
    return todayUTC >= targetDate
  }
 </script>
