@@ -1,6 +1,5 @@
 <template>
   <div class="features">
-    <!-- 循环过滤后的数组 -->
     <div 
       v-for="(item, index) in filteredFeatures" 
       :key="index" 
@@ -40,7 +39,6 @@ const props = defineProps({
   }
 });
 
-// 定义判断日期的方法
 const isAfterDate = (targetDateStr) => {
   if (!targetDateStr) return true
   const targetDate = new Date(targetDateStr)
@@ -50,14 +48,12 @@ const isAfterDate = (targetDateStr) => {
   return todayUTC >= targetDate
 }
 
-// 计算属性：过滤符合条件的feature
 const filteredFeatures = computed(() => {
   return props.features.filter(item => isAfterDate(item.showAfter))
 })
 </script>
 
 <style scoped>
-/* 保留你原有的样式 */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
