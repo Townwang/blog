@@ -1,9 +1,11 @@
 <!-- blog/.townwang/.vitepress/theme/components/Downloads.vue -->
-<template>
-  <div class="features">
+<template 
+     class="features"  
+     v-for="(item, index) in features"
+     :key="index"
+       >
+  <div>
       <div 
-        v-for="(item, index) in features"
-        :key="index"
         class="feature-card"
         v-if="isAfterDate(item.showAfter)"
        >
