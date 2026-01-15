@@ -34,40 +34,38 @@ features:
     desc: Flow让你一键轻松实现自动重复点击和滑动
     btnText: 立即下载
     version: v1.3.4
-    showAfter: 2026-01-14
+    showAfter: 2026-01-15
   - title: SAI安装器
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.2/SAI%E5%AE%89%E8%A3%85%E5%99%A8v2.1.8.apk
     desc: 在您设备上安装APK-APKS-XAPK-APKM和分割APK
     btnText: 立即下载
     version: v2.1.8
-    showAfter: 2026-01-14
+    showAfter: 2026-01-16
   - title: 中药百科大全
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.3/%E4%B8%AD%E8%8D%AF%E7%99%BE%E7%A7%91%E5%A4%A7%E5%85%A8_1.5.apk
     desc: 【中药百科大全】v1.5解锁永久会员版/药材方剂中药识别一站式查
     btnText: 立即下载
     version: v1.5.0
-    showAfter: 2026-01-16
+    showAfter: 2026-01-17
   - title: 金调KTV
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.4/%E9%87%91%E8%B0%83KTV_20250801.8.1.apk
     desc: 【金调KTV】v20250801.8.1更新修改永久激活免费版
     btnText: 立即下载
     version: v1.8.1
-    showAfter: 2026-01-17
+    showAfter: 2026-01-18
 ---
 
 <script setup lang="ts">
 import Features from '../.vitepress/theme/layouts/DownloadLayout.vue'
 import { useData } from 'vitepress'
-import { ref, computed, onMounted } from 'vue' // 关键修正：从vue导入onMounted
+import { ref, computed, onMounted } from 'vue'
 
 const { frontmatter } = useData()
 const inputPassword = ref('')      
 const isVerified = ref(false) 
 const errorTip = ref('')
 const isLoading = ref(false) 
-// 定义localStorage的key
 const STORAGE_KEY = 'resource_download_auth'
-// 24小时的毫秒数
 const EXPIRE_TIME = 24 * 60 * 60 * 1000
 
 const isButtonDisabled = computed(() => {
@@ -117,19 +115,16 @@ const validateBase64 = (base64: string, inputPwd: string): boolean => {
   return true
 }
 
-// 校验localStorage中的认证信息
 const checkAuthStorage = () => {
   try {
     const storedData = localStorage.getItem(STORAGE_KEY)
     if (!storedData) return false
     const { expireTime } = JSON.parse(storedData)
-    // 判断是否在有效期内
     const now = Date.now()
     if (now < expireTime) {
       isVerified.value = true
       return true
     } else {
-      // 过期则清除
       localStorage.removeItem(STORAGE_KEY)
       return false
     }
@@ -147,8 +142,6 @@ const verifyPassword = async () => {
     const inputPwd = inputPassword.value.trim()
     const base64 = await fetchBase64ByPassword(inputPwd)
     validateBase64(base64, inputPwd)
-    
-    // 验证成功，存储状态和过期时间
     isVerified.value = true
     const expireTime = Date.now() + EXPIRE_TIME
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
@@ -166,11 +159,9 @@ const logout = () => {
   inputPassword.value = ''
   isVerified.value = false
   errorTip.value = ''
-  // 登出时清除localStorage
   localStorage.removeItem(STORAGE_KEY)
 }
 
-// 页面挂载时校验缓存
 onMounted(() => {
   checkAuthStorage()
 })
