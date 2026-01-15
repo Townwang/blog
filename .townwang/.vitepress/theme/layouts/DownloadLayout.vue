@@ -3,7 +3,7 @@
   <div class="features"  
  >
 
-<template v-for="(item, index) in features" :key="index">
+<div v-for="(item, index) in features" :key="index">
       <div 
         class="feature-card"
         v-if="item && isAfterDate(item.showAfter)"
@@ -28,7 +28,7 @@
       </a>
     </div>
   </div>
-</template>
+</div>
 </template>
 
 <script setup>
