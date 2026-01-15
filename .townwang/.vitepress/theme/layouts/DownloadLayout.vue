@@ -1,11 +1,10 @@
 <!-- blog/.townwang/.vitepress/theme/components/Downloads.vue -->
 <template>
   <div class="features"  
-  v-for="(item, index) in features" 
-  :key="index">
-    <!-- 新增日期判断：当前日期 >= item.showAfter 才显示 -->
+ >
 <div
-  v-if="(item.showAfter ? isAfterDate(item.showAfter) : true)"
+ v-for="(item, index) in features" 
+ :key="index"
   class="feature-card"
 >
       <VPBadge 
