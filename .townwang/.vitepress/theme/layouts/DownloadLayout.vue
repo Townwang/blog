@@ -1,33 +1,33 @@
 <!-- blog/.townwang/.vitepress/theme/components/Downloads.vue -->
 <template>
-      <div 
+     <div 
      class="features"
      v-for="(item, index) in features"
      :key="index">
-      <div
+        <div
         v-if="isAfterDate(item.showAfter)"
         class="feature-card"
-       >
-      <VPBadge 
-        v-if="item.version" 
-        type="tip" 
-        class="version-badge"
-      >
-        {{ item.version }}
-      </VPBadge>
-      <h3 class="feature-title">{{ item.title }}</h3>
-      <p class="feature-desc">{{ item.desc }}</p>
-      <a 
-        v-if="item.link" 
-        :href="item.link" 
-        class="feature-btn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ item.btnText || 'Download' }}
-      </a>
-</div>
-</div>
+        >
+         <VPBadge 
+           v-if="item.version" 
+           type="tip" 
+           class="version-badge"
+          >
+            {{ item.version }}
+         </VPBadge>
+         <h3 class="feature-title">{{ item.title }}</h3>
+         <p class="feature-desc">{{ item.desc }}</p>
+         <a 
+          v-if="item.link" 
+          :href="item.link" 
+          class="feature-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+         >
+           {{ item.btnText || 'Download' }}
+         </a>
+     </div>
+   </div>
 </template>
 
 <script setup>
