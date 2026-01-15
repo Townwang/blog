@@ -5,6 +5,7 @@
       v-for="(item, index) in features" 
       :key="index" 
       class="feature-card"
+      v-if="isEnable(item.date)"
     >
       <VPBadge 
         v-if="item.version" 
@@ -30,6 +31,7 @@
 
 <script setup>
 import { VPBadge } from 'vitepress/theme'
+import { computed } from 'vue'
 
 const props = defineProps({
   features: {
@@ -38,6 +40,22 @@ const props = defineProps({
     default: () => []
   }
 });
+
+const isEnable = (date) => {
+  if (!date) return true
+  
+  const targetDate = typeof date === 'string' 
+    ? new Date(date) 
+    : date
+
+  if (isNaN(targetDate.getTime())) return true
+
+ 
+  const now = new Date()
+  const currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+
+  return currentDate >= targetDate
+}
 </script>
 
 <style scoped>
