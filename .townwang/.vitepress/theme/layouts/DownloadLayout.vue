@@ -2,8 +2,9 @@
 <template>
   <div class="features">
 
-<div v-for="(item, index) in features" :key="index">
+<div v-for="(item, index) in features">
       <div 
+        :key="index"
         v-if="item && isAfterDate(item.showAfter)"
         class="feature-card"
        >
