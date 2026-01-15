@@ -5,7 +5,6 @@
 <div 
   v-for="(item, index) in features" 
   :key="index"
-  v-if="isAfterDate(item.showAfter)"
   class="feature-card"
 >
       <VPBadge 
