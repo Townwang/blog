@@ -6,7 +6,7 @@
         :key="index"
         class="feature-card"
        >
-      <div v-if="item && isAfterDate(item.showAfter)">
+      <div v-if="isAfterDate(item.showAfter)">
       <VPBadge 
         v-if="item.version" 
         type="tip" 
