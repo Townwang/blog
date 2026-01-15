@@ -108,3 +108,13 @@
   margin: 2rem 0;
 }
 
+.logout-btn {
+   padding: 0.5rem 1.2rem;
+   background-color: #f1f5f9;
+   color: #334155;
+   border: 1px solid #e2e8f0;
+   border-radius: 6px;
+   font-size: 0.9rem;
+   cursor: pointer;
+   transition: all 0.2s;
+ }
