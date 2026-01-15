@@ -53,19 +53,22 @@ features:
     btnText: 立即下载
     version: v1.8.1
     showAfter: 2026-01-17
-
 ---
 
 <script setup lang="ts">
 import Features from '../.vitepress/theme/layouts/DownloadLayout.vue'
-import { useData } from 'vitepress'
-const { frontmatter } = useData()
+import { useData, onMounted } from 'vitepress'
 import { ref, computed } from 'vue'
 
+const { frontmatter } = useData()
 const inputPassword = ref('')      
 const isVerified = ref(false) 
 const errorTip = ref('')
 const isLoading = ref(false) 
+// 定义localStorage的key
+const STORAGE_KEY = 'resource_download_auth'
+// 24小时的毫秒数
+const EXPIRE_TIME = 24 * 60 * 60 * 1000
 
 const isButtonDisabled = computed(() => {
   return isLoading.value || isVerified.value || !inputPassword.value.trim()
@@ -111,8 +114,29 @@ const validateBase64 = (base64: string, inputPwd: string): boolean => {
   if (decodedText !== inputPwd) {
     throw new Error('密码错误，请重新输入')
   }
-
   return true
+}
+
+// 校验localStorage中的认证信息
+const checkAuthStorage = () => {
+  try {
+    const storedData = localStorage.getItem(STORAGE_KEY)
+    if (!storedData) return false
+    const { expireTime } = JSON.parse(storedData)
+    // 判断是否在有效期内
+    const now = Date.now()
+    if (now < expireTime) {
+      isVerified.value = true
+      return true
+    } else {
+      // 过期则清除
+      localStorage.removeItem(STORAGE_KEY)
+      return false
+    }
+  } catch (err) {
+    localStorage.removeItem(STORAGE_KEY)
+    return false
+  }
 }
 
 const verifyPassword = async () => {
@@ -121,12 +145,15 @@ const verifyPassword = async () => {
   
   try {
     const inputPwd = inputPassword.value.trim()
-    
     const base64 = await fetchBase64ByPassword(inputPwd)
-
     validateBase64(base64, inputPwd)
-
+    
+    // 验证成功，存储状态和过期时间
     isVerified.value = true
+    const expireTime = Date.now() + EXPIRE_TIME
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      expireTime
+    }))
   } catch (err) {
     errorTip.value = (err as Error).message
     isVerified.value = false
@@ -139,7 +166,14 @@ const logout = () => {
   inputPassword.value = ''
   isVerified.value = false
   errorTip.value = ''
+  // 登出时清除localStorage
+  localStorage.removeItem(STORAGE_KEY)
 }
+
+// 页面挂载时校验缓存
+onMounted(() => {
+  checkAuthStorage()
+})
 </script>
 
 > [!TIP]
@@ -164,5 +198,6 @@ const logout = () => {
   <p class="verify-error">{{ errorTip }}</p>
 </div>
 <div v-else class="resource-content">
+  <button @click="logout" class="logout-btn" style="margin-bottom:16px;padding:4px 8px;">退出登录</button>
   <Features :features="frontmatter.features" />
 </div>
