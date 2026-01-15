@@ -1,38 +1,36 @@
 <template>
-
-<div class="features">
+  <div class="features">
+    <!-- 循环过滤后的数组 -->
     <div 
-      v-for="(item, index) in features" 
+      v-for="(item, index) in filteredFeatures" 
       :key="index" 
       class="feature-card"
     >
-        <div v-if="isAfterDate(item.showAfter)" class="feature-card"
-        >
-         <VPBadge 
-           v-if="item.version" 
-           type="tip" 
-           class="version-badge"
-          >
-            {{ item.version }}
-         </VPBadge>
-         <h3 class="feature-title">{{ item.title }}</h3>
-         <p class="feature-desc">{{ item.desc }}</p>
-         <a 
-          v-if="item.link" 
-          :href="item.link" 
-          class="feature-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-         >
-           {{ item.btnText || 'Download' }}
-         </a>
-     </div>
-   </div>
-</div>
+      <VPBadge 
+        v-if="item.version" 
+        type="tip" 
+        class="version-badge"
+      >
+        {{ item.version }}
+      </VPBadge>
+      <h3 class="feature-title">{{ item.title }}</h3>
+      <p class="feature-desc">{{ item.desc }}</p>
+      <a 
+        v-if="item.link" 
+        :href="item.link" 
+        class="feature-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ item.btnText || 'Download' }}
+      </a>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import { VPBadge } from 'vitepress/theme'
+import { computed } from 'vue'
 
 const props = defineProps({
   features: {
@@ -41,17 +39,25 @@ const props = defineProps({
     default: () => []
   }
 });
+
+// 定义判断日期的方法
 const isAfterDate = (targetDateStr) => {
-   if (!targetDateStr) return true
-   const targetDate = new Date(targetDateStr)
-   if (isNaN(targetDate.getTime())) return true
-   const today = new Date()
-   const todayUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()))
-   return todayUTC >= targetDate
- }
+  if (!targetDateStr) return true
+  const targetDate = new Date(targetDateStr)
+  if (isNaN(targetDate.getTime())) return true
+  const today = new Date()
+  const todayUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()))
+  return todayUTC >= targetDate
+}
+
+// 计算属性：过滤符合条件的feature
+const filteredFeatures = computed(() => {
+  return props.features.filter(item => isAfterDate(item.showAfter))
+})
 </script>
 
 <style scoped>
+/* 保留你原有的样式 */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
