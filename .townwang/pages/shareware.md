@@ -53,6 +53,18 @@ features:
     btnText: 立即下载
     version: v1.8.1
     showAfter: 2026-01-18
+  - title: 吉他教学
+    link: 
+    desc: 无需经验适合所有年龄段和任何吉他
+    btnText: 立即下载
+    version: v9.7.6
+    showAfter: 2026-01-19
+  - title: 蓝云
+    link: https://gitee.com/jdy2002/SplitLanzou/releases/download/1.8.6/SplitLanzou-1.8.6.apk
+    desc: 第三方蓝奏云盘安卓客户端
+    btnText: 立即下载
+    version: v1.8.6
+    showAfter: 2026-01-20
 ---
 
 <script setup lang="ts">
