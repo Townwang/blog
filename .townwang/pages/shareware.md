@@ -1,7 +1,6 @@
 ---
 layout: download
-title: 资源下载页
-description: 包含常用工具的版本及下载入口
+title: Shareware
 account: 软件人
 features:
   - title: 全球网测
