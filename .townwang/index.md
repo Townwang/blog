@@ -23,7 +23,7 @@ features:
     details: "Use the Hook plugin for Douyin to bypass the 15-second limit."
     linkText: See
     link: /open/awemetown
-	
+
   - title: Instant follow
     details: "World-first developer WeChat API: Enables one-click official account follow and friend addition in third-party apps—no API or permissions required."
     linkText: See
