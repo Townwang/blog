@@ -59,8 +59,6 @@ const theme = themeName.map((item) => ({
   ],
 }));
 </script>
-  <VPTeamPageSection>
     <template #members>
       <VPTeamMembers size="small" :members="theme" />
     </template>
-  </VPTeamPageSection>
