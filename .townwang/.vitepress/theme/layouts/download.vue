@@ -137,7 +137,7 @@ onMounted(() => {
 
 <template>
 <div class="tip-alert">
-<strong>💡提示</strong>：关注公众号 <strong>frontmatter.value.account</strong> 查看软件详细介绍并获取密码
+<strong>💡提示</strong>：关注公众号 <strong>frontmatter.account</strong> 查看软件详细介绍并获取密码
 </div>
 
   <div v-if="!isVerified" class="password-verify-container">
