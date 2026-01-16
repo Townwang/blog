@@ -13,7 +13,7 @@ export default defineConfig({
     logo: { src: '/logo.svg', width: 24, height: 24 },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Watch', link: '/pages/watch-theme' },
+      { text: 'Watch', link: '/pages/watchtheme' },
       { text: 'Shareware', link: '/pages/shareware' }
     ],
     socialLinks: [
