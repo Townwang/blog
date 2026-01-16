@@ -137,7 +137,7 @@ onMounted(() => {
 
 <template>
 <div class="tip-alert">
-<strong>💡提示</strong>：关注公众号 <strong>{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
+<strong>💡提示</strong>：关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
 </div>
 
   <div v-if="!isVerified" class="password-verify-container">
@@ -255,7 +255,9 @@ onMounted(() => {
   font-size: 0.9rem;
   transition: none;
 }
-
+.tip-account {
+  color: var(--vp-c-brand);
+}
 .password-verify-container {
   max-width: 400px;
   margin: 4rem auto;
