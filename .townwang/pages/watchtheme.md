@@ -3,6 +3,7 @@ layout: home
 ---
 
 # GT6 Pro Theme
+> [!TIP]
 > How to install a theme? [Download](https://watch.townwang.com/watch/app/gadgetbridge.nightly_0.87.1.apk)
 
 <script setup>
