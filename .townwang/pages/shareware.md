@@ -72,13 +72,13 @@ features:
     version: v1.4.4
     showAfter: 2026-01-21
   - title: 电工仿真软件
-    link: 
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.7/%E7%94%B5%E5%B7%A5%E4%BB%BF%E7%9C%9F%E8%BD%AF%E4%BB%B6_7.4.0.apk
     desc: 电工仿真软件一款专为电工和电子发烧友、电力专业学生打造的高效电路模拟电路仿真工具。无论您是从事工业电路仿真、家庭电路仿真，还是学习物理电路仿真，电工仿真软件都将是您的高效助手。
     btnText: 立即下载
     version: v7.4.0
     showAfter: 2026-01-22
   - title: 爱电影
-    link: 
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.8/%E7%88%B1%E7%94%B5%E5%BD%B1_2.2.8.apk
     desc: 爱电影是一款专门为喜欢电影的朋友们打造的视频软件。
     btnText: 立即下载
     version: v2.2.8
