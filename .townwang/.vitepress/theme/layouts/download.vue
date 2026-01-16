@@ -309,10 +309,6 @@ onMounted(() => {
   }
 }
 
-
-
-
-
 .tip-account {
   color: var(--vp-c-brand);
 }
