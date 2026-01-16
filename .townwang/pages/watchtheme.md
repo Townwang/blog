@@ -48,6 +48,8 @@ const themeName = [
 const theme = themeName.map((item) => ({
   avatar: "https://watch.townwang.com/watch/theme/" + item + "/img.png",
   name: item,
+  org: 下载表盘 ,
+  orgLink: "https://watch.townwang.com/watch/theme/" + item + "/download.hwt",
   links: [
     {
       icon: {
