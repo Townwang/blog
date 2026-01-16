@@ -1,17 +1,11 @@
 ---
 layout: home
-
-hero:
-  name: GT6 Pro Theme
-  text:
-  tagline: "How to install a theme? "
-  actions:
-    - theme: brand
-      text: Download
-      link: https://watch.townwang.com/watch/app/gadgetbridge.nightly_0.87.1.apk
-  image:
-    src: /ape.svg
 ---
+
+# GT6 Pro Theme
+> How to install a theme?
+
+[Download](https://watch.townwang.com/watch/app/gadgetbridge.nightly_0.87.1.apk)
 
 <script setup>
 import {
