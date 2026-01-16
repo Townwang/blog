@@ -83,6 +83,12 @@ features:
     btnText: 立即下载
     version: v2.2.8
     showAfter: 2026-01-23
+  - title: 广告屏蔽器
+    link: 
+    desc: 广告屏蔽器使用安卓虚拟网络技术拦截广告主机域名，使得广告APP客户端无法从广告服务器获取广告内容，从而达到屏蔽广告的目的，软件体积很少才10m超省运存。
+    btnText: 立即下载
+    version: v1.0.1
+    showAfter: 2026-01-24
 
 ---
 
