@@ -49,15 +49,7 @@ const theme = themeName.map((item) => ({
   avatar: "https://watch.townwang.com/watch/theme/" + item + "/img.png",
   name: item,
   org: "下载表盘",
-  orgLink: "https://watch.townwang.com/watch/theme/" + item + "/download.hwt",
-  links: [
-    {
-      icon: {
-        svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Download</title><path d="M19 9h-4V4H9v5H5l7 7 7-7zM4 19v2h16v-2H4z" fill="currentColor"/><path d="M12 13l-4-4h3V3h2v6h3l-4 4z" fill="currentColor"/></svg>',
-      },
-      link: "https://watch.townwang.com/watch/theme/" + item + "/download.hwt",
-    },
-  ],
+  orgLink: "https://watch.townwang.com/watch/theme/" + item + "/download.hwt"
 }));
 </script>
  <VPTeamPageSection>
