@@ -40,43 +40,9 @@ const isButtonDisabled = computed(() => {
   return isLoading.value || isVerified.value || !inputPassword.value.trim()
 })
 
-const decodeChineseBase64 = (base64: string): string => {
-  try {
-    const binaryStr = atob(base64)
-    const utf8Bytes = new Uint8Array(binaryStr.length)
-    for (let i = 0; i < binaryStr.length; i++) {
-      utf8Bytes[i] = binaryStr.charCodeAt(i)
-    }
-    return new TextDecoder('utf-8').decode(utf8Bytes)
-  } catch (err) {
-    throw new Error('解码失败')
-  }
-}
 
-const fetchBase64ByPassword = async (password: string): Promise<string> => {
-  try {
-    const response = await fetch('/shareware', {
-      method: 'GET',
-      headers: {
-        'Cache-Control': 'no-cache, no-store, must-revalidate',
-        'Pragma': 'no-cache',
-        'If-Modified-Since': '0'
-      }
-    })
-
-    if (!response.ok) {
-      throw new Error(`API请求失败：${response.status} ${response.statusText}`)
-    }
-
-    const rawBase64 = await response.text()
-    return rawBase64
-  } catch (err) {
-    throw new Error(`获取失败：${(err as Error).message}`)
-  }
-}
-
-const validateBase64 = (base64: string, inputPwd: string): boolean => {
-  if (base64 !== inputPwd) {
+const validateBase64 = (inputPwd: string): boolean => {
+  if (frontmatter.value.password !== inputPwd) {
     throw new Error('密码错误，请重新输入')
   }
   return true
@@ -106,7 +72,7 @@ const verifyPassword = async () => {
   errorTip.value = ''
   
   try {
-    const inputPwd = inputPassword.value.trim() validateBase64(frontmatter.value.password, inputPwd)
+    const inputPwd = inputPassword.value.trim() validateBase64(inputPwd)
     isVerified.value = true
     const expireTime = Date.now() + EXPIRE_TIME
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
