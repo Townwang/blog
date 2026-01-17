@@ -101,16 +101,14 @@
 }
 
 .resource-content {
-  margin: 2rem 0;
   text-align: center;
 }
-
 
 .download-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding: 2rem 1.5rem; 
+  padding: 1rem 2rem; 
   max-width: 1200px;
   margin: 0 auto;
 }
