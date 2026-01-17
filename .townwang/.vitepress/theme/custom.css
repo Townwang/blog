@@ -39,7 +39,7 @@
 }
 
 .verifyContainer {
-  margin: 2rem 2rem;
+  margin: 2rem auto;
   padding: 2rem;
   border-radius: 12px;
   background: var(--vp-c-bg-soft);
@@ -197,6 +197,17 @@
   color: var(--vp-c-brand);
 }
 @media (max-width: 768px) {
+.verifyContainer {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
   .download-features {
     grid-template-columns: 1fr;
     padding: 1rem 1.5rem;
