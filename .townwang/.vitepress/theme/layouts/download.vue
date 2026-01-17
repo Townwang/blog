@@ -20,28 +20,18 @@ const isAfterDate = (targetDateStr: string) => {
   const targetDateWith8h = new Date(targetDate.getTime() + 8 * 60 * 60 * 1000)
   
   const today = new Date()
-  const todayUTC = new Date(Date.UTC(
-    today.getFullYear(),
-    today.getMonth(),
-    today.getDate(),
-    today.getHours(),
-    today.getMinutes(),
-    today.getSeconds(),
-    today.getMilliseconds()
-  ))
-  return todayUTC >= targetDateWith8h
+  return today >= targetDateWith8h
 }
 
 const filteredFeatures = computed(() => {
-  return frontmatter.value.features?.filter(item => isAfterDate(item.showAfter)) || []
+  return frontmatter.value.features?.filter(item => isAfterDate(item.showAfter)) ?? []
 })
 
 const isButtonDisabled = computed(() => {
   return isLoading.value || isVerified.value || !inputPassword.value.trim()
 })
 
-
-const validateBase64 = (inputPwd: string): boolean => {
+const validate = (inputPwd: string): boolean => {
   if (frontmatter.value.password !== inputPwd) {
     throw new Error('密码错误，请重新输入')
   }
@@ -73,7 +63,7 @@ const verifyPassword = async () => {
   
   try {
     const inputPwd = inputPassword.value.trim()
-validateBase64(inputPwd)
+validate(inputPwd)
     isVerified.value = true
     const expireTime = Date.now() + EXPIRE_TIME
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
