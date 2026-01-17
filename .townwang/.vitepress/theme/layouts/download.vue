@@ -72,7 +72,8 @@ const verifyPassword = async () => {
   errorTip.value = ''
   
   try {
-    const inputPwd = inputPassword.value.trim() validateBase64(inputPwd)
+    const inputPwd = inputPassword.value.trim()
+validateBase64(inputPwd)
     isVerified.value = true
     const expireTime = Date.now() + EXPIRE_TIME
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
