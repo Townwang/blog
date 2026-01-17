@@ -152,7 +152,7 @@
 .download-feature-desc {
   margin: 0 0 1rem;
   color: var(--vp-c-text-2);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   line-height: 1.6;
   text-align: left;
 }
@@ -171,7 +171,7 @@
   border-width: 1px;
   color: var(--vp-c-brand);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition: none;
 }
 
