@@ -87,4 +87,16 @@ features:
     btnText: 立即下载
     version: v1.0.1
     showAfter: 2026-01-24
+  - title: 佩奇影视
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.1.0/%E4%BD%A9%E5%A5%87%E5%BD%B1%E8%A7%86_3.5.3.apk
+    desc: 高清秒播免登陆可缓存和投屏免费版
+    btnText: 立即下载
+    version: v3.5.3
+    showAfter: 2026-01-25
+  - title: ImageMeter
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.1.1/ImageMeter_3.9.5.apk
+    desc: 一款可以轻松测量图像中的尺寸、角度和面积的工具应用。有 老它您再也不用为新家手工绘制草图来规划新家具。只需拍摄一张照片，然后在手机或平板上标注尺寸即可。
+    btnText: 立即下载
+    version: v3.9.5
+    showAfter: 2026-01-26
 ---
