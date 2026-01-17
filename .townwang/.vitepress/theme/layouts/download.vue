@@ -2,6 +2,7 @@
 import { useData } from 'vitepress'
 import { ref, computed, onMounted } from 'vue'
 import { VPBadge } from 'vitepress/theme'
+import { VPAlert } from 'vitepress/theme/components'
 
 const { frontmatter } = useData()
 
@@ -136,9 +137,9 @@ onMounted(() => {
 </script>
 
 <template>
-<div class="tip-alert">
-<strong>💡提示</strong>：关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
-</div>
+  <VPAlert type="tip">
+    关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
+  </VPAlert>
 
   <div v-if="!isVerified" class="password-verify-container">
     <h3 class="verify-title">请输入资源访问密码</h3>
