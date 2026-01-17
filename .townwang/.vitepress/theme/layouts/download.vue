@@ -136,12 +136,11 @@ onMounted(() => {
 </script>
 
 <template>
-
-  <div v-if="!isVerified" class="verifyContainer">
-  <div class="tip-alert">
+  <div v-if="!isVerified">
+<div class="tip-alert">
     关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
   </div>
-
+  <div class="verifyContainer">
     <h3 class="verifyContainer-title">请输入资源访问密码</h3>
     <input
       type="password"
@@ -189,4 +188,5 @@ onMounted(() => {
       </div>
     </div>
   </div>
+ </div>
 </template>
