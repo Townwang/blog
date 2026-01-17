@@ -100,4 +100,11 @@ features:
     btnText: 立即下载
     version: v3.9.5
     showAfter: 2026-01-26
+  - title: X下载器
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.1.2/X%20%E4%B8%8B%E8%BD%BD%E5%99%A8_2.3.9.apk
+    desc: 可以从任何网站和社交应用程序快速安全地下载视频和图像
+    btnText: 立即下载
+    version: v2.3.9
+    showAfter: 2026-01-27
+
 ---
