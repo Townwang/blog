@@ -76,8 +76,7 @@ const fetchBase64ByPassword = async (password: string): Promise<string> => {
 }
 
 const validateBase64 = (base64: string, inputPwd: string): boolean => {
-  const decodedText = decodeChineseBase64(base64)
-  if (decodedText !== inputPwd) {
+  if (base64 !== inputPwd) {
     throw new Error('密码错误，请重新输入')
   }
   return true
@@ -107,9 +106,7 @@ const verifyPassword = async () => {
   errorTip.value = ''
   
   try {
-    const inputPwd = inputPassword.value.trim()
-    const base64 = await fetchBase64ByPassword(inputPwd)
-    validateBase64(base64, inputPwd)
+    const inputPwd = inputPassword.value.trim() validateBase64(frontmatter.value.password, inputPwd)
     isVerified.value = true
     const expireTime = Date.now() + EXPIRE_TIME
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
