@@ -140,23 +140,23 @@ onMounted(() => {
     关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
   </div>
 
-  <div v-if="!isVerified" class="verify-container">
-    <h3 class="verify-title">请输入资源访问密码</h3>
+  <div v-if="!isVerified" class="verifyContainer">
+    <h3 class="title">请输入资源访问密码</h3>
     <input
       type="password"
       v-model="inputPassword"
       placeholder="请输入密码"
-      class="verify-input"
+      class="input"
       @keyup.enter="!isButtonDisabled && verifyPassword()"
     />
     <button
       @click="verifyPassword"
       :disabled="isButtonDisabled"
-      class="verify-btn"
+      class="btn"
     >
       {{ isLoading ? '验证中...' : '验证' }}
     </button>
-    <p class="verify-error">{{ errorTip }}</p>
+    <p class="error">{{ errorTip }}</p>
   </div>
 
   <div v-else class="resource-content">
