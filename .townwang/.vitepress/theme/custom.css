@@ -5,7 +5,9 @@
   --vp-c-text-1: #333333;
   --vp-c-text-2: #666666;
   --vp-c-text-3: #999999;
-  --vp-c-text-4: #EEEEEE;
+  --vp-c-text-4: #f39c12;
+  --vp-c-bg-1: #EEEEEE;
+  --vp-c-bg-2: #FFFFFF;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
@@ -65,14 +67,14 @@
   border-radius: 8px;
   font-size: 0.95rem;
   color: var(--vp-c-text-1);
-  background: #ffffff;
+  background: var(--vp-c-bg-2);
   transition: border-color 0.2s ease;
 }
 
 .verifyContainer-input:focus {
   border-color: var(--vp-c-brand-1);
   outline: none;
-  background: #ffffff;
+  background: var(--vp-c-bg-2);
 }
 
 .verifyContainer-btn {
@@ -176,8 +178,8 @@
 .download-logout-btn {
    margin-top: 1rem;
    padding: 0.5rem 1.2rem;
-   background-color: var(--vp-c-text-4);
-   color: var(--vp-c-text-1);
+   background-color: var(--vp-c-bg-1);
+   color: var(--vp-c-text-4);
    border-radius: 6px;
    font-size: 0.8rem;
    cursor: pointer;
