@@ -90,7 +90,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="!isVerified" class="resource-content">
+  <div v-if="!isVerified">
 <div class="tip-alert">
     关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
   </div>
