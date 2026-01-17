@@ -2,7 +2,6 @@
 import { useData } from 'vitepress'
 import { ref, computed, onMounted } from 'vue'
 import { VPBadge } from 'vitepress/theme'
-import { VPAlert } from 'vitepress/theme/components'
 
 const { frontmatter } = useData()
 
@@ -137,9 +136,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <VPAlert type="tip">
+  <div class="tip-alert">
     关注公众号 <strong class="tip-account">{{frontmatter.account}}</strong> 查看软件详细介绍并获取密码
-  </VPAlert>
+  </div>
 
   <div v-if="!isVerified" class="password-verify-container">
     <h3 class="verify-title">请输入资源访问密码</h3>
@@ -282,6 +281,9 @@ onMounted(() => {
   border-left: 4px solid #228be6;
 }
 
+.tip-account {
+  color: var(--vp-c-brand);
+}
 @media (max-width: 768px) {
   .features {
     grid-template-columns: 1fr;
@@ -310,14 +312,4 @@ onMounted(() => {
   }
 }
 
-.tip-account {
-  color: var(--vp-c-brand);
-}
-.tip-alert {
-  padding: 1rem;
-  margin: 1rem 2rem;
-  border-radius: 4px;
-  background: var(--vp-c-bg-soft);
-  border-left: 4px solid #228be6;
-}
 </style>
