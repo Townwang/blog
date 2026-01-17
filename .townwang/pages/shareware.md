@@ -106,5 +106,11 @@ features:
     btnText: 立即下载
     version: v2.3.9
     showAfter: 2026-01-27
+  - title: 威力导演
+    link: https://www.123865.com/s/giF3jv-eWWN3?pwd=5FA8#
+    desc: 市面上最强大的影音创作应用
+    btnText: 网盘下载
+    version: v16.0.0
+    showAfter: 2026-01-28
 
 ---
