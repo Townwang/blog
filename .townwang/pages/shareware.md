@@ -2,6 +2,7 @@
 layout: download
 title: Shareware
 account: 软件人
+password: townwang
 features:
   - title: 全球网测
     link: https://down.cnspeedtest.cn:8043/TaierAndroid/update/globalspeed_4.4.4_safe.apk
