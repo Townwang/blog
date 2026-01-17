@@ -141,22 +141,22 @@ onMounted(() => {
   </div>
 
   <div v-if="!isVerified" class="verifyContainer">
-    <h3 class="title">请输入资源访问密码</h3>
+    <h3 class="verifyContainer.title">请输入资源访问密码</h3>
     <input
       type="password"
       v-model="inputPassword"
       placeholder="请输入密码"
-      class="input"
+      class="verifyContainer.input"
       @keyup.enter="!isButtonDisabled && verifyPassword()"
     />
     <button
       @click="verifyPassword"
       :disabled="isButtonDisabled"
-      class="btn"
+      class="verifyContainer.btn"
     >
       {{ isLoading ? '验证中...' : '验证' }}
     </button>
-    <p class="error">{{ errorTip }}</p>
+    <p class="verifyContainer.error">{{ errorTip }}</p>
   </div>
 
   <div v-else class="resource-content">
