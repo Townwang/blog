@@ -158,7 +158,7 @@ onMounted(() => {
     </button>
     <p class="verifyContainer-error">{{ errorTip }}</p>
   </div>
-
+ </div>
   <div v-else class="resource-content">
     <button @click="logout" class="download-logout-btn">退出登录</button>
     <div class="download-features">
@@ -188,5 +188,4 @@ onMounted(() => {
       </div>
     </div>
   </div>
- </div>
 </template>
