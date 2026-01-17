@@ -2,6 +2,9 @@
   --vp-c-brand-1: #228be6;
   --vp-c-brand-2: #228be6;
   --vp-c-brand-3: #228be6;
+  --vp-c-text-1: #333333;
+  --vp-c-text-2: #666666;
+  --vp-c-text-3: #999999;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
@@ -47,7 +50,7 @@
 
 .verifyContainer-title {
   margin-top: 0;
-  color: #1d2129;
+  color: var(--vp-c-text-1);
   font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
@@ -60,7 +63,7 @@
   border: 1px solid var(--verify-input-border);
   border-radius: 8px;
   font-size: 0.95rem;
-  color: #303133;
+  color: var(--vp-c-text-1);
   background: #ffffff;
   transition: border-color 0.2s ease;
 }
@@ -172,9 +175,9 @@
 .download-logout-btn {
    margin-top: 1rem;
    padding: 0.5rem 1.2rem;
-   background-color: #f1f5f9;
-   color: #334155;
-   border: 1px solid #e2e8f0;
+   background-color: var(--vp-c-text-3);
+   color: var(--vp-c-text-1);
+   border: 1px solid var(--vp-c-text-3);
    border-radius: 6px;
    font-size: 0.8rem;
    cursor: pointer;
@@ -186,7 +189,7 @@
   margin: 1rem 2rem;
   border-radius: 4px;
   background: var(--vp-c-bg-soft);
-  border-left: 4px solid #228be6;
+  border-left: 4px solid var(--vp-c-brand-1);
 }
 
 .tip-account {
