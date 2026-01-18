@@ -20,8 +20,6 @@ const isAfterDate = (targetDateStr: string) => {
 
 const targetDateWith8h = new Date(targetDate);
 
-targetDateWith8h.setHours(8, 0, 0, 0);
-
 const today = new Date();
 return today >= targetDateWith8h;
 }
