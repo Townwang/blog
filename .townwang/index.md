@@ -7,32 +7,24 @@ hero:
   actions:
     - theme: brand
       text: WeChat Subscription Account?
-      link: /wechat/account
+      link: /pages/account
     - theme: alt
-      text: GitHub
-      link: https://github.com/Townwang
+      text: Project
+      link: /pages/project
   image:
     src: /ape.svg
 features:
-  - title: yaohuo APP
-    details: "A forum application for Android, built upon a locally encapsulated crawler framework"
-    linkText: See
-    link: /open/yaohuo
+  - title: Open Source Projects
+    details: "Precipitation of Technical Practices"
 
-  - title: AwemeTown
-    details: "Use the Hook plugin for Douyin to bypass the 15-second limit."
-    linkText: See
-    link: /open/awemetown
+  - title: Clean Software
+    details: "Selection of Practical Tools"
 
-  - title: Instant follow
-    details: "World-first developer WeChat API: Enables one-click official account follow and friend addition in third-party apps—no API or permissions required."
-    linkText: See
-    link: /open/follow
+  - title: Watch Themes
+    details: "Customization of Wrist Creativity"
 
-  - title: Ghostland
-    details: "Manage applications to stop or enable using the kernerSU WebUI."
-    linkText: See
-    link: /open/ghostland
+  - title: Developer Articles
+    details: "Sharing of Practical Experience"
 ---
 
 
