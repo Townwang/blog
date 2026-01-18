@@ -112,10 +112,10 @@ features:
     btnText: 网盘下载
     version: v16.0.0
     showAfter: 2026-01-28
-  - title: 测试
-    link: 
-    desc: test
-    btnText: 测试
-    showAfter: 2026-01-19
+  - title: 小影
+    link: https://www.123912.com/s/giF3jv-fCWN3?pwd=hOJb#
+    desc: 快速制作好玩 / 有趣 / 有故事的视频应用
+    btnText: 网盘下载
+    showAfter: 2026-01-29
 
 ---
