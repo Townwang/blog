@@ -51,7 +51,7 @@ features:
     desc: 【金调KTV】v20250801.8.1更新修改永久激活免费版
     btnText: 立即下载
     version: v1.8.1
-    showAfter: 2026-01-18 08:00:00
+    showAfter: 2026-01-18
   - title: 吉他教学
     link: https://gitee.com/townwangs/shareware/releases/download/v0.0.5/SimplyGuitar_9.7.6.apk
     desc: 无需经验适合所有年龄段和任何吉他
@@ -116,6 +116,6 @@ features:
     link: 
     desc: test
     btnText: 测试
-    showAfter: 2026-01-18 12:00:00
+    showAfter: 2026-01-19
 
 ---
