@@ -11,6 +11,9 @@ export default defineConfig({
   description: "A hub for diverse Android open-source projects. For more open-source content, search the official account 👉 'OpenApe'",
   themeConfig: {
     logo: { src: '/logo.svg', width: 24, height: 24 },
+    nav: [
+      { text: 'Home', link: '/' }
+    ],
     sitemap: {
       hostname: 'https://townwang.com'
     },
