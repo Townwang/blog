@@ -16,11 +16,14 @@ const isAfterDate = (targetDateStr: string) => {
   if (!targetDateStr) return true
   const targetDate = new Date(targetDateStr)
   if (isNaN(targetDate.getTime())) return true
-  
-  const targetDateWith8h = new Date(targetDate.getTime() + 8 * 60 * 60 * 1000)
-  
-  const today = new Date()
-  return today >= targetDateWith8h
+
+
+const targetDateWith8h = new Date(targetDate);
+
+targetDateWith8h.setHours(8, 0, 0, 0);
+
+const today = new Date();
+return today >= targetDateWith8h;
 }
 
 const filteredFeatures = computed(() => {
