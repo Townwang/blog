@@ -8,9 +8,15 @@ hero:
     - theme: brand
       text: WeChat Subscription Account?
       link: /pages/account
+    - theme: brand
+      text: Watch
+      link: /pages/watchtheme
     - theme: alt
       text: Project
       link: /pages/project
+    - theme: alt
+      text: Shareware
+      link: /pages/shareware
   image:
     src: /ape.svg
 features:
