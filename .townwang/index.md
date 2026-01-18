@@ -20,16 +20,20 @@ hero:
   image:
     src: /ape.svg
 features:
-  - title: Open Source Projects
+  - icon: /feature/one.png
+    title: Open Source Projects
     details: "Explore hands-on open source initiatives and distilled lessons from real-world development."
 
-  - title: Clean Software
+  - icon: /feature/two.png
+    title: Clean Software
     details: "Discover a curated collection of clean, reliable software and utility tools for developers."
 
-  - title: Watch Themes
+  - icon: /feature/three.png
+    title: Watch Themes
     details: "Dive into unique watch face designs and step-by-step customization guides for your wrist gear."
 
-  - title: Developer Articles
+  - icon: /feature/four.png
+    title: Developer Articles
     details: "Practical tips, coding tricks, and actionable insights for fellow developers to level up."
 ---
 
