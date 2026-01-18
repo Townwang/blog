@@ -14,16 +14,16 @@ hero:
   image:
     src: /ape.svg
 features:
-  - title: Open Source Projects | Technical Practice & Insights
+  - title: Open Source Projects
     details: "Explore hands-on open source initiatives and distilled lessons from real-world development."
 
-  - title: Clean Software | Curated Practical Tools
+  - title: Clean Software
     details: "Discover a curated collection of clean, reliable software and utility tools for developers."
 
-  - title: Watch Themes | Wrist-Worn Creative Customization
+  - title: Watch Themes
     details: "Dive into unique watch face designs and step-by-step customization guides for your wrist gear."
 
-  - title: Developer Articles | Hands-On Experience Sharing
+  - title: Developer Articles
     details: "Practical tips, coding tricks, and actionable insights for fellow developers to level up."
 ---
 
