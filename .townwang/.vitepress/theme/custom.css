@@ -176,7 +176,7 @@
 .download-logout-btn {
    margin-top: 1rem;
    padding: 0.5rem 1.2rem;
-   background-color: var(--vp-c-bg);
+   background-color: var(--vp-c-bg-alt);
    color: var(--vp-c-text-4);
    border-radius: 6px;
    font-size: 0.8rem;
