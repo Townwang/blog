@@ -112,5 +112,10 @@ features:
     btnText: 网盘下载
     version: v16.0.0
     showAfter: 2026-01-28
+  - title: 测试
+    link: 
+    desc: test
+    btnText: 测试
+    showAfter: 2026-01-18 12:00:00
 
 ---
