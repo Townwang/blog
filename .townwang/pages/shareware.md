@@ -119,7 +119,7 @@ features:
     version: v9.33.0
     showAfter: 2026-01-29
   - title: 超级音乐编辑器
-    link: 
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.1.3/%E8%B6%85%E7%BA%A7%E9%9F%B3%E4%B9%90%E7%BC%96%E8%BE%91%E5%99%A8_2.8.3.0.apk
     desc: Android 解锁专业版 —— 强大的音频剪辑大师，支持对MP3、M4A、AAC等格式
     btnText: 点击下载
     version: v2.3.8.0
