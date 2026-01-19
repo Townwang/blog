@@ -116,6 +116,13 @@ features:
     link: https://www.123912.com/s/giF3jv-fCWN3?pwd=hOJb#
     desc: 快速制作好玩 / 有趣 / 有故事的视频应用
     btnText: 网盘下载
+    version: v9.33.0
     showAfter: 2026-01-29
+  - title: 超级音乐编辑器
+    link: 
+    desc: Android 解锁专业版 —— 强大的音频剪辑大师，支持对MP3、M4A、AAC等格式
+    btnText: 点击下载
+    version: v2.3.8.0
+    showAfter: 2026-01-30
 
 ---
