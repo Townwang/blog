@@ -20,25 +20,3 @@ onMounted(() => {
   dailyPwd.value = p
 })
 </script>
-
-<style scoped>
-.daily-password {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #f5f5f5;
-  border-radius: 8px;
-}
-.password {
-  font-weight: 700;
-  color: #2196f3;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-}
-/* 适配VitePress深色模式 */
-:deep(.dark) .daily-password {
-  background: #2d2d2d;
-}
-:deep(.dark) .password {
-  color: #4fc3f7;
-}
-</style>
