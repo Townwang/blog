@@ -37,8 +37,7 @@ const isButtonDisabled = computed(() => {
 })
 
 const validate = (inputPwd: string): boolean => {
-console.log('今日动态密码：', password) // 控制台打印密码
-  if (password !== inputPwd) {
+  if (password.value !== inputPwd) {
     throw new Error('密码错误，请重新输入')
   }
   return true
