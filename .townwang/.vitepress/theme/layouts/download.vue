@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted ,getCurrentInstance } from 'vue'
 import { VPBadge } from 'vitepress/theme'
 
 const { frontmatter } = useData()
