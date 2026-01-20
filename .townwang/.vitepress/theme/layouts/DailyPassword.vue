@@ -5,39 +5,19 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, getCurrentInstance } from 'vue'
 
 const today = ref('')
 const dailyPwd = ref('')
 
-// 基于日期生成固定哈希（MD5），保证同一日期哈希唯一
-function getMd5(str) {
-  let hash = 0
-  if (str.length === 0) return hash
-  for (let i = 0; i < str.length; i++) {
-    const char = str.charCodeAt(i)
-    hash = ((hash << 5) - hash) + char
-    hash = hash & hash // 转为32位整数
-  }
-  return Math.abs(hash).toString(16).padStart(8, '0')
-}
+// 获取Vue全局实例，拿到挂载的$dailyPwd工具函数
+const { $dailyPwd } = getCurrentInstance().appContext.config.globalProperties
 
-// 生成当日日期（格式：YYYY-MM-DD，保证跨时区一致）
-function getTodayDate() {
-  const d = new Date()
-  // 转UTC日期，避免不同时区日期不一致
-  return [
-    d.getUTCFullYear(),
-    String(d.getUTCMonth() + 1).padStart(2, '0'),
-    String(d.getUTCDate()).padStart(2, '0')
-  ].join('-')
-}
-
-// 生成每日密码：截取哈希前6/8位，可自定义长度
 onMounted(() => {
-  today.value = getTodayDate()
-  const dateHash = getMd5(today.value)
-  dailyPwd.value = dateHash.slice(0, 6) // 取前6位，可改8位/其他长度
+  // 调用全局工具函数，获取日期和密码（可传参改长度，如$dailyPwd.getDateAndPwd(8)）
+  const { today: t, dailyPwd: p } = $dailyPwd.getDateAndPwd()
+  today.value = t
+  dailyPwd.value = p
 })
 </script>
 
@@ -53,5 +33,12 @@ onMounted(() => {
   color: #2196f3;
   font-size: 1.2rem;
   letter-spacing: 2px;
+}
+/* 适配VitePress深色模式 */
+:deep(.dark) .daily-password {
+  background: #2d2d2d;
+}
+:deep(.dark) .password {
+  color: #4fc3f7;
 }
 </style>
