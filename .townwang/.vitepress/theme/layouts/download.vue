@@ -89,9 +89,8 @@ const logout = () => {
 }
 
 onMounted(() => {
-  pwd.value = $dailyPwd.generateDailyPwd(8)
   checkAuthStorage()
-
+ pwd.value = $dailyPwd.generateDailyPwd(8)
 })
 </script>
 
