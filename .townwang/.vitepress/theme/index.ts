@@ -1,7 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-import * as dailyPwdUtils from '../utils/dailyPwd'
+import * as dailyPwdUtils from './utils/dailyPwd'
 import Download from './layouts/download.vue'
 import DailyPassword from './layouts/DailyPassword.vue'
 
