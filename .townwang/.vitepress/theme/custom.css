@@ -195,6 +195,19 @@
 .tip-account {
   color: var(--vp-c-brand);
 }
+.daily-password {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+.password {
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
 @media (max-width: 768px) {
 .verifyContainer {
   margin: 2rem auto;
@@ -232,17 +245,5 @@
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
-.daily-password {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: var(--vp-c-bg-soft);
-  border-radius: 8px;
-}
-.password {
-  font-weight: 700;
-  color: var(--vp-c-brand-1);
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-}
 }
 
