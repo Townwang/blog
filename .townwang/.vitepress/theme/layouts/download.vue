@@ -10,7 +10,7 @@ const isVerified = ref(false)
 const errorTip = ref('')
 const isLoading = ref(false) 
 const pwd = ref('')
-const { $dailyPwd } = getCurrentInstance().appContext.config.globalProperties
+const { dailyPwd } = getCurrentInstance().appContext.config.globalProperties
 const STORAGE_KEY = 'resource_download_auth'
 const EXPIRE_TIME = 24 * 60 * 60 * 1000
 
@@ -36,7 +36,7 @@ const isButtonDisabled = computed(() => {
 })
 
 const validate = (inputPwd: string): boolean => {
-  if (pwd !== inputPwd) {
+  if (dailyPwd.generateDailyPwd(8) !== inputPwd) {
     throw new Error('密码错误，请重新输入')
   }
   return true
@@ -90,7 +90,6 @@ const logout = () => {
 
 onMounted(() => {
   checkAuthStorage()
- pwd.value = $dailyPwd.generateDailyPwd(8)
 })
 </script>
 
