@@ -90,7 +90,7 @@ const logout = () => {
 }
 
 onMounted(() => {
-  password.value = $dailyPwd.generateDailyPwd()
+  password.value = $dailyPwd.getDateAndPwd()
   checkAuthStorage()
 })
 </script>
