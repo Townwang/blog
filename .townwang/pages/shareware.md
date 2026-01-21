@@ -124,6 +124,16 @@ features:
     btnText: 点击下载
     version: v2.3.8.0
     showAfter: 2026-01-30
+  - title: QRbot Pro
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.1.4/%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%89%AB%E6%8F%8F%E5%99%A8_3.3.5-P.apk
+    desc: 直装完美解锁专业版 —— 高级二维码扫描仪 / 支持所有类型QR码/条形码
+    version: v3.3.5-P
+    showAfter: 2026-01-31
+  - title: Hermit Pro
+    link: https://gitee.com/townwangs/shareware/releases/download/v0.1.5/Hermit_31.4.0.apk
+    desc: Hermit Pro 是一款基于 web 的 Lite 应用替换大型本地应用程序。
+    version: v31.4.0
+    showAfter: 2026-02-01
 
 ---
 
