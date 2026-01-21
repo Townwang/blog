@@ -7,7 +7,6 @@
 
 <script setup>
 import { ref, onMounted, getCurrentInstance } from 'vue'
-import { Content } from 'vitepress/theme'
 const today = ref('')
 const dailyPwd = ref('')
 
