@@ -1,10 +1,10 @@
 <template>
   <div class="daily-password">
     <p>今日动态密码（{{ today }}）：<span class="password">{{ dailyPwd }}</span></p>
+  </div>
     <div class="pwd-link-wrap">
       <a href="https://townwang.com/pages/shareware" target="_blank" rel="noopener noreferrer">点击前往下载基地</a>
     </div>
-  </div>
 <Content />
 </template>
 
