@@ -148,4 +148,5 @@ onMounted(() => {
       </div>
     </div>
   </div>
+<Content />
 </template>
