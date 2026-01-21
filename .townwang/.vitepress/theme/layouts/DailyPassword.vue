@@ -2,11 +2,12 @@
   <div class="daily-password">
     <p>今日动态密码（{{ today }}）：<span class="password">{{ dailyPwd }}</span></p>
   </div>
+<Content />
 </template>
 
 <script setup>
 import { ref, onMounted, getCurrentInstance } from 'vue'
-
+import { Content } from 'vitepress/theme'
 const today = ref('')
 const dailyPwd = ref('')
 
