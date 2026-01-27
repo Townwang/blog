@@ -136,6 +136,12 @@ features:
     btnText: 立即下载
     version: v31.4.0
     showAfter: 2026-02-01
+  - title: 七猫免费小说
+    link: https://pan.tenire.com/down.php/48c621fbe7ef7c4c4c3c0d486fad4429.apk
+    desc: 破解会员，去除广告
+    btnText: 立即下载
+    version: v7.89
+    showAfter: 2026-02-02
 
 ---
 
