@@ -150,9 +150,17 @@ features:
     showAfter: 2026-02-02
   - title: 橘喵4k
     link: https://www.123865.com/s/giF3jv-KRWN3?pwd=ZSik#
-    desc: 网盘下载
+    desc: 去广告，除更新 
+    btnText: 网盘下载
     version: v2.3.2
     showAfter: 2026-02-03
+  - title: 醒图
+    link: https://www.123912.com/s/giF3jv-uRWN3?pwd=4mn0#
+    desc: 修改XX精简vip会员版
+    btnText: 网盘下载
+    version: v8.1.0
+    showAfter: 2026-02-04
+    
 ---
 
 ::: details 资源来源声明
