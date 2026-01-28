@@ -148,7 +148,11 @@ features:
     btnText: 网盘下载
     version: v7.11.0
     showAfter: 2026-02-02
-
+  - title: 橘喵4k
+    link: https://www.123865.com/s/giF3jv-KRWN3?pwd=ZSik#
+    desc: 网盘下载
+    version: v2.3.2
+    showAfter: 2026-02-03
 ---
 
 ::: details 资源来源声明
