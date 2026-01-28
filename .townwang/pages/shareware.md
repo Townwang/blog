@@ -160,7 +160,12 @@ features:
     btnText: 网盘下载
     version: v8.1.0
     showAfter: 2026-02-04
-    
+  - title: 微数据恢复管家
+    link: https://www.123912.com/s/giF3jv-SRWN3?pwd=05Us#
+    desc: 一款专业的微数据深度查找软件，通过底层扫描数据技术，安全高效的扫描查找微信图片、微信视频、微信文档等微信数据，一键批量导出。
+    btnText: 网盘下载
+    version: v1.8.0
+    showAfter: 2026-02-05
 ---
 
 ::: details 资源来源声明
