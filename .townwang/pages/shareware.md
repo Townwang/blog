@@ -141,6 +141,12 @@ features:
     desc: 破解会员，去除广告
     btnText: 立即下载
     version: v7.89
+    showAfter: 2026-01-29
+  - title: 全能扫描王
+    link: https://www.123865.com/s/giF3jv-0RWN3?pwd=CWkV#
+    desc: 破解vip 去除广告
+    btnText: 网盘下载
+    version: v7.11.0
     showAfter: 2026-02-02
 
 ---
