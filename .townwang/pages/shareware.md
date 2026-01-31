@@ -172,6 +172,12 @@ features:
     btnText: 网盘下载
     version: v2.3.4
     showAfter: 2026-02-06
+  - title: 豆丁视频
+    link: https://www.123912.com/s/giF3jv-WDWN3?pwd=hAyP#
+    desc: 去广告xx会员版/海量影视资源支持点播+直播
+    btnText: 网盘下载
+    version: v3.0.9
+    showAfter: 2026-02-07
 ---
 
 ::: details 资源来源声明
