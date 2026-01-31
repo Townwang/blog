@@ -166,6 +166,12 @@ features:
     btnText: 网盘下载
     version: v1.8.0
     showAfter: 2026-02-05
+  - title: 你的电视
+    link: https://www.123912.com/s/giF3jv-sDWN3?pwd=Kqlr#
+    desc: 这是一款功能齐全的电视免费直播软件！
+    btnText: 网盘下载
+    version: v2.3.4
+    showAfter: 2026-02-06
 ---
 
 ::: details 资源来源声明
