@@ -178,6 +178,12 @@ features:
     btnText: 网盘下载
     version: v3.0.9
     showAfter: 2026-02-07
+  - title: Jivo
+    link: https://www.123912.com/s/giF3jv-RDWN3?pwd=1uhX#
+    desc: 视频AI换脸工具更新修改解锁会员免费版
+    btnText: 网盘下载
+    version: v3.34.662
+    showAfter: 2026-02-08
 ---
 
 ::: details 资源来源声明
