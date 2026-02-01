@@ -184,6 +184,12 @@ features:
     btnText: 网盘下载
     version: v3.34.662
     showAfter: 2026-02-08
+  - title: NFC工具箱专业版
+    link: https://www.123912.com/s/giF3jv-yDWN3?pwd=YBpy#
+    desc: 目前最全面最强悍的NFC工具应用
+    btnText: 网盘下载
+    version: v9.1
+    showAfter: 2026-02-09
 ---
 
 ::: details 资源来源声明
