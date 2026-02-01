@@ -190,6 +190,12 @@ features:
     btnText: 网盘下载
     version: v9.1
     showAfter: 2026-02-09
+  - title: AdGuard
+    link: https://www.123912.com/s/giF3jv-VDWN3?pwd=s1Nh#
+    desc: 最强广告拦截4.14.34/64位修改高级版/支持去除国内95%应用的广告
+    btnText: 网盘下载
+    version: v4.14.34
+    showAfter: 2026-02-10
 ---
 
 ::: details 资源来源声明
