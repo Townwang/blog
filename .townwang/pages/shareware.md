@@ -196,6 +196,12 @@ features:
     btnText: 网盘下载
     version: v4.14.34
     showAfter: 2026-02-10
+  - title: Local Dream
+    link: https://www.123912.com/s/giF3jv-8rWN3?pwd=HYDe#
+    desc: 一款不限制本地图片AI生成工具
+    btnText: 网盘下载
+    version: v2.3.1
+    showAfter: 2026-02-11
 ---
 
 ::: details 资源来源声明
