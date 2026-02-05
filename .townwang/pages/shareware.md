@@ -202,6 +202,18 @@ features:
     btnText: 网盘下载
     version: v2.3.1
     showAfter: 2026-02-11
+  - title: 酷狗概念版
+    link: https://www.123912.com/s/giF3jv-G8WN3?pwd=U9NM#
+    desc: 没有升级提示，使用即签到vip，车机安装有桌面歌词（原版不显示）！
+    btnText: 网盘下载
+    version: v2.2.5
+    showAfter: 2026-02-12
+  - title: Spck代码器
+    link: https://www.123912.com/s/giF3jv-P8WN3?pwd=9bqp#
+    desc: 手机上写代码的神器
+    btnText: 网盘下载
+    version: v9.7.2
+    showAfter: 2026-02-13
 ---
 
 ::: details 资源来源声明
