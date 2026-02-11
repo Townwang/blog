@@ -214,6 +214,43 @@ features:
     btnText: 网盘下载
     version: v9.7.2
     showAfter: 2026-02-13
+  - title: WiFi万能钥匙
+    link: https://www.123912.com/s/giF3jv-BuWN3?pwd=3LLO#
+    desc: 更新修改去广告去限制XX解锁会员版
+    btnText: 网盘下载
+    version: v5.1.92
+    showAfter: 2026-02-14
+  - title: MeloYou音乐
+    link: https://www.123912.com/s/giF3jv-JuWN3?pwd=Bymq#
+    desc: 更新无广告无限制免费版/多平台海量歌曲
+    btnText: 网盘下载
+    version: v1.3.8.7
+    showAfter: 2026-02-15
+  - title: Fly音乐-加强版
+    link: https://www.123912.com/s/giF3jv-IuWN3?pwd=o5o8#
+    desc: 更新修改去广告去无用项除更新免费版
+    btnText: 网盘下载
+    version: v1.3.1
+    showAfter: 2026-02-16
+  - title: 视频提取宝
+    link: https://www.123912.com/s/giF3jv-MuWN3?pwd=6gMF#
+    desc: 更新修改去广告除更新解锁高级免费版
+    btnText: 网盘下载
+    version: v37
+    showAfter: 2026-02-17
+  - title: 端木视频
+    link: https://www.123912.com/s/giF3jv-wuWN3?pwd=nrMA#
+    desc: 更新修改去广告多线路多源高清4K蓝光免费版
+    btnText: 网盘下载
+    version: v4.0.0
+    showAfter: 2026-02-18
+  - title: Magic魔术橡皮擦
+    link: https://www.123912.com/s/giF3jv-guWN3?pwd=piiH#
+    desc: 更新修改解锁高级版/智能ai一键擦除
+    btnText: 网盘下载
+    version: v2.25.14
+    showAfter: 2026-02-19
+  
 ---
 
 ::: details 资源来源声明
