@@ -250,6 +250,12 @@ features:
     btnText: 网盘下载
     version: v2.25.14
     showAfter: 2026-02-19
+  - title: 排班助手
+    link: https://www.123912.com/s/giF3jv-FuWN3?pwd=gzPq#
+    desc: 更新修改去广告除更新解锁免费会员版
+    btnText: 网盘下载
+    version: v3.12.2
+    showAfter: 2026-02-20
   
 ---
 
