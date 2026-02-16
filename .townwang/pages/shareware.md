@@ -256,6 +256,12 @@ features:
     btnText: 网盘下载
     version: v3.12.2
     showAfter: 2026-02-20
+  - title: 移动打印
+    link: https://www.123912.com/s/giF3jv-nUWN3?pwd=uBCi#
+    desc: 随时随地在任何WiFi蓝牙USB打印机上打印
+    btnText: 网盘下载
+    version: v5.26.4
+    showAfter: 2026-02-21
   
 ---
 

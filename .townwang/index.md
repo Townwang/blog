@@ -14,9 +14,6 @@ hero:
     - theme: alt
       text: Watch
       link: /pages/watchtheme
-    - theme: alt
-      text: Shareware
-      link: /pages/shareware
   image:
     src: /ape.svg
 features:
