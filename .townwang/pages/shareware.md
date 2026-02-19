@@ -262,7 +262,61 @@ features:
     btnText: 网盘下载
     version: v5.26.4
     showAfter: 2026-02-21
-  
+  - title: 摩比音乐
+    link: https://www.123912.com/s/giF3jv-tSWN3?pwd=c1W1#
+    desc: 更新免费正式版/软件聚合三大音乐平台
+    btnText: 网盘下载
+    version: v1.2.4
+    showAfter: 2026-02-22
+  - title: 可乐下载器
+    link: https://www.123912.com/s/giF3jv-iSWN3?pwd=m5xk#
+    desc: 更新修改去广告解锁会员免费版
+    btnText: 网盘下载
+    version: v2.1.2
+    showAfter: 2026-02-23
+  - title: 极速音乐
+    link: https://www.123912.com/s/giF3jv-zSWN3?pwd=c5gt#
+    desc: 更新无广告高清多种类聚合免费版
+    btnText: 网盘下载
+    version: v1.0.0
+    showAfter: 2026-02-24
+  - title: CCleaner
+    link: https://www.123912.com/s/giF3jv-5SWN3?pwd=U6tf#
+    desc: 老牌专业手机优化清理检测专家更新XX专业版
+    btnText: 网盘下载
+    version: v26.03.0
+    showAfter: 2026-02-25
+  - title: 火蜂巢直播
+    link: https://www.123912.com/s/giF3jv-qSWN3?pwd=aZbd#
+    desc: 内置10条线路4K秒切源派大星壳打造的海量资源王
+    btnText: 网盘下载
+    version: v6.7.6
+    showAfter: 2026-02-26
+  - title: 奇奇视频
+    link: https://www.123912.com/s/giF3jv-6SWN3?pwd=r5RP#
+    desc: 更新修改去广告蓝光高清多源可投屏免费版
+    btnText: 网盘下载
+    version: v5.0.1
+    showAfter: 2026-02-27
+  - title: 边玩边学
+    link: https://www.123912.com/s/giF3jv-VSWN3?pwd=qGqN#
+    desc: 解锁付费专业版/拥有3千多款有趣的儿童学习游戏
+    btnText: 网盘下载
+    version: v26.6.0
+    showAfter: 2026-02-28
+  - title: 玖拾玖度TV
+    link: https://www.123912.com/s/giF3jv-jSWN3?pwd=icW7#
+    desc: 更新无广告高清直播+轮播多端可用免费版
+    btnText: 网盘下载
+    version: v3.5.2
+    showAfter: 2026-03-01
+  - title: 妙手自动点击连点器
+    link: https://www.123912.com/s/giF3jv-dlWN3?pwd=W1TB#
+    desc: 更新修改去广告解锁免费高级版
+    btnText: 网盘下载
+    version: v2.5
+    showAfter: 2026-03-02
+
 ---
 
 ::: details 资源来源声明
