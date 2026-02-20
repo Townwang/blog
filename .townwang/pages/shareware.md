@@ -275,7 +275,7 @@ features:
     version: v2.1.2
     showAfter: 2026-02-23
   - title: 极速音乐
-    link: https://www.123912.com/s/giF3jv-zSWN3?pwd=c5gt#
+    link: https://www.123912.com/s/giF3jv-olWN3?pwd=Hlsf#
     desc: 更新无广告高清多种类聚合免费版
     btnText: 网盘下载
     version: v1.0.0
