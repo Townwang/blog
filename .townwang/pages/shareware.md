@@ -278,7 +278,7 @@ features:
     link: https://www.123912.com/s/giF3jv-olWN3?pwd=Hlsf#
     desc: 更新无广告高清多种类聚合免费版
     btnText: 网盘下载
-    version: v1.0.0
+    version: v1.0.1
     showAfter: 2026-02-24
   - title: CCleaner
     link: https://www.123912.com/s/giF3jv-5SWN3?pwd=U6tf#
