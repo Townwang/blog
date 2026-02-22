@@ -316,7 +316,30 @@ features:
     btnText: 网盘下载
     version: v2.5
     showAfter: 2026-03-02
-
+  - title: RS文件浏览器
+    link: https://www.123912.com/s/giF3jv-mlWN3?pwd=YtcI#
+    desc: Android终极文件管理工具
+    btnText: 网盘下载
+    version: v2.2.6.3
+    showAfter: 2026-03-03
+  - title: 快牙
+    link: https://www.123912.com/s/giF3jv-XlWN3?pwd=sGVT#
+    desc: 更新修改会员版/无限制跨平台极速手机文件互传工具
+    btnText: 网盘下载
+    version: v7.0
+    showAfter: 2026-03-04
+  - title: 拍照数学计算器
+    link: https://www.123912.com/s/giF3jv-nlWN3?pwd=XbCA#
+    desc: 付费专业版/世上最聪明的拍照数学计算器
+    btnText: 网盘下载
+    version: v8.47.0
+    showAfter: 2026-03-05
+  - title: 花小猪影视
+    link: https://www.123912.com/s/giF3jv-8lWN3?pwd=vmp7#
+    desc: 更新修改去广告可投屏高清多源免费版
+    btnText: 网盘下载
+    version: v2.3.3
+    showAfter: 2026-03-06
 ---
 
 ::: details 资源来源声明
