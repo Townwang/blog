@@ -2,40 +2,41 @@
 layout: home
 
 hero:
-  name: Open Project
-  tagline:  "a hub for diverse open-source projects. "
+  name: 开源项目
+  tagline:  "专注原创开源项目与纯净软件分享"
   actions:
     - theme: brand
-      text: WeChat Subscription Account?
+      text: 微信公众号
       link: /pages/account
     - theme: brand
-      text: Project
+      text: 开源项目
       link: /pages/project
     - theme: alt
-      text: Watch
+      text: 手表主题
       link: /pages/watchtheme
   image:
     src: /ape.svg
 features:
   - icon:
       src: /feature/one.png
-    title: Open Source Projects
-    details: "Explore hands-on open source initiatives and distilled lessons from real-world development."
+    title: 开源项目
+    details: "探索实战型开源项目，汲取来自真实开发场景的精炼经验。"
 
   - icon:
       src: /feature/two.png
-    title: Clean Software
-    details: "Discover a curated collection of clean, reliable software and utility tools for developers."
+    title: 优质软件
+    details: "发现精心筛选、简洁可靠的开发者软件与实用工具。"
 
   - icon:
       src: /feature/three.png
-    title: Watch Themes
-    details: "Dive into unique watch face designs and step-by-step customization guides for your wrist gear."
-
+    title: 表盘主题
+    details: "欣赏独具特色的表盘设计，获取腕上设备一步步自定义教程。"
+ 
   - icon:
       src: /feature/four.png
-    title: Developer Articles
-    details: "Practical tips, coding tricks, and actionable insights for fellow developers to level up."
+    title: 开发者文章
+    details: "实用技巧、编程干货与可落地思路，助力开发者持续进阶。"
+
 ---
 
 
