@@ -340,6 +340,12 @@ features:
     btnText: 网盘下载
     version: v2.3.3
     showAfter: 2026-03-06
+  - title: JZMusic音乐
+    link: https://www.123912.com/s/giF3jv-a7WN3?pwd=usJj#
+    desc: 更新无广告免费版/可下载和畅听无损音乐
+    btnText: 网盘下载
+    version: v1.8.5
+    showAfter: 2026-03-07
 ---
 
 ::: details 资源来源声明
