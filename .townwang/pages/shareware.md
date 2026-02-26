@@ -47,9 +47,9 @@ features:
     version: v1.5.0
     showAfter: 2026-01-17
   - title: 金调KTV
-    link: https://gitee.com/townwangs/shareware/releases/download/v0.0.4/%E9%87%91%E8%B0%83KTV_20250801.8.1.apk
+    link: https://www.123912.com/s/giF3jv-rbWN3?pwd=oSMx#
     desc: 【金调KTV】v20250801.8.1更新修改永久激活免费版
-    btnText: 立即下载
+    btnText: 网盘下载
     version: v1.8.1
     showAfter: 2026-01-18
   - title: 吉他教学
