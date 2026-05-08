@@ -17,6 +17,3 @@ mindmap
     Version Updates[v1.0.0 + Dependency Iterations]
     Auxiliary Resources[favicon/.github Configs]
 ```
-
-
-
