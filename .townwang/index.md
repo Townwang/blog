@@ -2,15 +2,12 @@
 layout: home
 
 hero:
-  name: 开源项目
+  name: 软件人
   tagline:  "专注原创开源项目与纯净软件分享"
   actions:
     - theme: brand
-      text: 微信公众号
-      link: /pages/account
-    - theme: brand
-      text: 开源项目
-      link: /pages/project
+      text: 博客
+      link: https://hunter.wang
     - theme: alt
       text: 手表主题
       link: /pages/watchtheme
